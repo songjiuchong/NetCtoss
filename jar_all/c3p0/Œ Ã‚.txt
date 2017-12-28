@@ -1,0 +1,31 @@
+警告: A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+2014-6-9 10:06:05 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+信息: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgey3m92z2btfptbgxrz|14f73f7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgey3m92z2btfptbgxrz|14f73f7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@localhost:1521:xe, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 10, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-6-9 10:06:56 org.apache.catalina.loader.WebappClassLoader loadClass
+信息: Illegal access: this web application instance has been stopped already.  Could not load com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.  The eventual following stack trace is caused by an error thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access, and has no functional impact.
+java.lang.IllegalStateException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1566)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1040)
+	at com.mchange.v2.resourcepool.BasicResourcePool.removeResource(BasicResourcePool.java:1507)
+	at com.mchange.v2.resourcepool.BasicResourcePool.removeResource(BasicResourcePool.java:1477)
+	at com.mchange.v2.resourcepool.BasicResourcePool.cullExpired(BasicResourcePool.java:1565)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1900(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$CullTask.run(BasicResourcePool.java:2089)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+Exception in thread "C3P0PooledConnectionPoolManager[identityToken->1hgey3m92z2baq1m45vv8|2cdad2]-AdminTaskTimer" java.lang.NoClassDefFoundError: com/mchange/v2/resourcepool/BasicResourcePool$1DestroyResourceTask
+	at com.mchange.v2.resourcepool.BasicResourcePool.destroyResource(BasicResourcePool.java:1040)
+	at com.mchange.v2.resourcepool.BasicResourcePool.removeResource(BasicResourcePool.java:1507)
+	at com.mchange.v2.resourcepool.BasicResourcePool.removeResource(BasicResourcePool.java:1477)
+	at com.mchange.v2.resourcepool.BasicResourcePool.cullExpired(BasicResourcePool.java:1565)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$1900(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$CullTask.run(BasicResourcePool.java:2089)
+	at java.util.TimerThread.mainLoop(Timer.java:512)
+	at java.util.TimerThread.run(Timer.java:462)
+Caused by: java.lang.ClassNotFoundException: com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	... 8 more

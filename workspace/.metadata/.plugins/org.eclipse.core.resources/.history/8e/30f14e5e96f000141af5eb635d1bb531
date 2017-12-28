@@ -1,0 +1,5 @@
+package com.netctoss.action.account;
+
+public class UpdateAccountPswValidate {
+
+}

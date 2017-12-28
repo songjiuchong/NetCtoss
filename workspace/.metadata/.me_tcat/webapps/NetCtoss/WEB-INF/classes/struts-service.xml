@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+
+<struts>
+
+	<!--业务账号模块service-->
+	<package name="service" namespace="/service" extends="netctoss"> 
+	
+		<!--组合查询业务账号的Action-->
+		<action name="findService" class="com.netctoss.action.service.FindServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<param name="pageSize">5</param>
+			<result name="success">
+				/WEB-INF/service/findService.jsp
+			</result>
+		</action>
+		
+		<!--跳转到新增业务帐号页面;-->
+		<action name="toAddService" class="com.netctoss.action.service.ToAddServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/service/addService.jsp
+			</result>
+		</action>
+	
+		<!--查找账务账号的Action-->
+		<action name="searchAccount" class="com.netctoss.action.service.SearchAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">account</param>
+			</result>
+		</action>
+		
+		<!--开通状态的Action-->
+		<action name="startService" class="com.netctoss.action.service.StartServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">message</param>
+			</result>
+		</action>
+		
+		<!--暂停状态的Action-->
+		<action name="pauseService" class="com.netctoss.action.service.PauseServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+		<!--删除状态的Action-->
+		<action name="deleteService" class="com.netctoss.action.service.DeleteServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+		<!--新增业务账号的Action-->
+		<action name="addService" class="com.netctoss.action.service.AddServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findService
+			</result>
+		</action>
+		
+		<!--跳转到修改页面的Action-->
+		<action name="toUpdateService" class="com.netctoss.action.service.ToUpdateServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/service/updateService.jsp
+			</result>		
+		</action>
+		
+		<!--修改保存的Action-->
+		<action name="updateService" class="com.netctoss.action.service.UpdateServiceAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findService
+			</result>
+		</action>
+		
+		<!--查看业务账号明细的Action-->
+		<action name="toServiceDetail" class="com.netctoss.action.service.ToServiceDetailAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/service/serviceDetail.jsp
+			</result>
+		</action>
+		
+	</package>
+		
+</struts>

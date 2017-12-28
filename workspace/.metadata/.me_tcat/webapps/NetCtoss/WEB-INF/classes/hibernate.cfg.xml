@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+		
+		<!-- SQL dialect -->
+        <property name="dialect">
+        	org.hibernate.dialect.OracleDialect
+        </property>
+        
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">
+        	oracle.jdbc.driver.OracleDriver
+        </property>
+        <property name="connection.url">
+        	jdbc:oracle:thin:@localhost:1521:song
+        </property>
+        <property name="connection.username">
+        	system
+        </property>
+        <property name="connection.password">
+        	songsong
+        </property>
+		
+		<!-- 显示底层生成的SQL语句 -->
+		<property name="show_sql">true</property>
+		<!-- 底层生成的SQL语句换行显示 -->
+		<property name="format_sql">true</property>
+		
+        <mapping resource="com/netctoss/pojo/Cost.hbm.xml"/>
+        <mapping resource="com/netctoss/pojo/Account.hbm.xml"/>
+        <mapping resource="com/netctoss/pojo/Service.hbm.xml"/>
+        <!-- <mapping resource="com/netctoss/pojo/Admin.hbm.xml"/>  -->
+        <!-- <mapping resource="com/netctoss/pojo/Role.hbm.xml"/>  -->
+        
+    </session-factory>
+
+</hibernate-configuration>
+

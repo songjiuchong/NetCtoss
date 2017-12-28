@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+
+	<!--资费模块cost-->
+	<package name="cost" namespace="/cost" extends="netctoss"> 
+	
+		<action name="findCost" class="com.netctoss.action.cost.FindCostAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<!--通过Action属性注入的方式给action中的属性利用set方法赋值-->
+			<param name="pageSize">5</param>	
+			<result name="success">
+				/WEB-INF/cost/findCost.jsp
+			</result>
+		</action>
+		
+		<!--删除资费Action-->
+		<action name="deleteCost" class="com.netctoss.action.cost.DeleteCostAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>			
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>		
+		</action>
+		
+		<!--跳转到新增资费页面的Action-->
+		<action name="toAddCost">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/cost/addCost.jsp
+			</result>	
+		</action>
+		
+		<!--新增资费页面的Action-->
+		<action name="addCost" class="com.netctoss.action.cost.AddCostAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findCost
+			</result>	
+		</action>	
+		
+		<!--新增表单校验的Action-->
+		<action name="addCostValidate" class="com.netctoss.action.cost.AddCostValidateAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>	
+		</action>	
+		
+		<!--修改表单校验的Action-->
+		<action name="updateCostValidate" class="com.netctoss.action.cost.UpdateCostValidateAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>	
+		</action>
+		
+		<!--跳转到修改页面的Action-->
+		<action name="toUpdateCost" class="com.netctoss.action.cost.ToUpdateAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/cost/updateCost.jsp
+			</result>		
+		</action>
+		
+		<!--修改保存的Action-->
+		<action name="updateCost" class="com.netctoss.action.cost.UpdateCostAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findCost
+			</result>
+		</action>
+		
+	</package>
+	
+</struts>
+
+

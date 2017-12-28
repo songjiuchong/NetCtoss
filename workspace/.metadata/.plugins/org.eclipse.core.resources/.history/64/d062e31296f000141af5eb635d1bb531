@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+	
+	<!--账务账号模块account-->
+	<package name="account" namespace="/account" extends="netctoss"> 
+		
+		<!--组合查询账务账号的Action-->
+		<action name="findAccount" class="com.netctoss.action.account.FindAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<param name="pageSize">5</param>
+			<result name="success">
+				/WEB-INF/account/findAccount.jsp
+			</result>
+		</action>
+
+	
+		<!--开通状态的Action-->
+		<action name="startAccount" class="com.netctoss.action.account.StartAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>	
+		
+		<!--暂停状态的Action-->
+		<action name="pauseAccount" class="com.netctoss.action.account.PauseAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+		<!--删除状态的Action-->
+		<action name="deleteAccount" class="com.netctoss.action.account.DeleteAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+		<!--跳转到新增账务账号页面的Action-->
+		<action name="toAddAccount">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/account/addAccount.jsp
+			</result>	
+		</action>
+		
+		<!--新增账务账号的Action-->
+		<action name="addAccount" class="com.netctoss.action.account.AddAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findAccount
+			</result>
+		</action>
+		
+		<!--新增账务账号名校验的Action-->
+		<action name="addAccountValidate" class="com.netctoss.action.account.AddAccountValidateAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>	
+		</action>	
+		
+		<!--查看账务账号明细的Action-->
+		<action name="toAccountDetail" class="com.netctoss.action.account.ToAccountDetailAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/account/accountDetail.jsp
+			</result>			
+		</action>
+		
+		<!--前往修改页面的Action-->
+		<action name="toUpdateAccount" class="com.netctoss.action.account.ToUpdateAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/account/updateAccount.jsp
+			</result>			
+		</action>
+		
+		<!--修改account的Action-->
+		<action name="updateAccount" class="com.netctoss.action.account.UpdateAccountAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findAccount
+			</result>			
+		</action>
+		
+		<!-- 检查更新Account页面中输入的旧密码是否正确 -->
+		<action name="updateAccountPswValidate" class="com.netctoss.action.account.UpdateAccountPswValidate">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>	
+		</action>
+		
+	</package>
+</struts>
+
+

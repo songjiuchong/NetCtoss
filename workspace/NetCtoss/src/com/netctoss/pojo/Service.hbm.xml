@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+<!-- name指定实体类,table指定数据表名 -->
+    <class name="com.netctoss.pojo.Service" table="SERVICE">
+    
+    	<!-- 主键字段映射描述 -->
+    	<!-- name指定属性名,type指定类型 -->
+        <id name="serviceId" type="integer">
+        	<!-- name指定字段名 -->
+        	<column name="ID"/>
+        	<!-- 指定添加操作主键值如何生成 -->
+        	<generator class="native">
+        		<!-- 指定序列名为service_seq -->
+        		<param name="sequence">service_seq</param>
+        	</generator>
+        </id>
+        <!-- 非主键字段映射描述 -->
+        <!-- 由于在关联映射中已经指定了ACCOUNT_ID属性,所以这里不能重复指定
+        <property name="accountId" type="integer">
+        	<column name="ACCOUNT_ID"/>
+        </property> 
+        -->
+        <property name="unixHost" type="string">
+        	<column name="UNIX_HOST"/>
+        </property>
+        <property name="osUsername" type="string">
+        	<column name="OS_USERNAME"/>
+        </property>
+        <property name="loginPasswd" type="string">
+        	<column name="LOGIN_PASSWD"/>
+        </property>       
+        <property name="status" type="string">
+        	<column name="STATUS"/>
+        </property>         
+        <property name="createDate" type="date">
+        	<column name="CREATE_DATE"/>
+        </property>         
+        <property name="pauseDate" type="date">
+        	<column name="PAUSE_DATE"/>
+        </property>         
+        <property name="closeDate" type="date">
+        	<column name="CLOSE_DATE"/>
+        </property> 
+        <!-- 由于在关联映射中已经指定了COST_ID属性,所以这里不能重复指定  
+        <property name="costId" type="integer">
+        	<column name="COST_ID"/>
+        </property>
+        -->
+        
+        <!-- 描述account属性,采用多对一关系加载相关的account信息 -->
+        <many-to-one name="account" 
+        	column="ACCOUNT_ID" 
+        	class="com.netctoss.pojo.Account">
+        </many-to-one>
+        
+         <!-- 描述cost属性,采用多对一关系加载相关的cost信息 -->
+        <many-to-one name="cost" 
+        	column="COST_ID" 
+        	class="com.netctoss.pojo.Cost">
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>

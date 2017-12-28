@@ -1,0 +1,1064 @@
+!SESSION 2015-05-06 19:18:15.671 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+This is a continuation of log file F:\myeclipse\workspace\.metadata\.bak_0.log
+Created Time: 2015-05-06 19:19:19.546
+
+!ENTRY org.maven.ide.eclipse 4 0 2015-05-06 19:19:19.546
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Transfer for nexus-maven-repository-index.properties failed; Transfer error: Connection timed out: no further information
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:693)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:19.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.internal.plugin.J2EEPreferences", thread "Thread[Worker-4,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.jst.j2ee.internal.plugin.J2EEPreferences" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.getJ2EEPreferences(J2EEPlugin.java:603)
+	at org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.initializeDefaultPluginPreferences(J2EEPlugin.java:396)
+	at org.eclipse.core.runtime.Plugin.internalInitializeDefaultPluginPreferences(Plugin.java:466)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:52)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:146)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:367)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:163)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.loadDefaults(DefaultPreferences.java:236)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:232)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:307)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:543)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.node(DefaultPreferences.java:150)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getDefaultPreferences(PreferenceForwarder.java:130)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getBoolean(PreferenceForwarder.java:206)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyEnablement.<clinit>(ClasspathDependencyEnablement.java:23)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:333)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:289)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:228)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestReferences(J2EEModuleVirtualComponent.java:161)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:126)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:116)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob$1.run(DependencyGraphImpl.java:324)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob.run(DependencyGraphImpl.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 38 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.getJ2EEPreferences(J2EEPlugin.java:603)
+	at org.eclipse.jst.j2ee.internal.plugin.J2EEPlugin.initializeDefaultPluginPreferences(J2EEPlugin.java:396)
+	at org.eclipse.core.runtime.Plugin.internalInitializeDefaultPluginPreferences(Plugin.java:466)
+	at org.eclipse.core.internal.preferences.legacy.InitLegacyPreferences.init(InitLegacyPreferences.java:52)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:146)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:367)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:163)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.loadDefaults(DefaultPreferences.java:236)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:232)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:307)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:543)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.node(DefaultPreferences.java:150)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getDefaultPreferences(PreferenceForwarder.java:130)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getBoolean(PreferenceForwarder.java:206)
+	at org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyEnablement.<clinit>(ClasspathDependencyEnablement.java:23)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:333)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:289)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:228)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestReferences(J2EEModuleVirtualComponent.java:161)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:126)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:116)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob$1.run(DependencyGraphImpl.java:324)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob.run(DependencyGraphImpl.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:24.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater$ModuleUpdateJob", thread "Thread[Worker-6,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-6,5,main]" is proceeding but "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater$ModuleUpdateJob" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.<init>(J2EEComponentClasspathUpdater.java:199)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.init(J2EEComponentClasspathUpdater.java:88)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.getInstance(J2EEComponentClasspathUpdater.java:81)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:348)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 26 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.<init>(J2EEComponentClasspathUpdater.java:199)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.init(J2EEComponentClasspathUpdater.java:88)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.getInstance(J2EEComponentClasspathUpdater.java:81)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:348)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:29.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater$ModuleUpdateJob$Queue", thread "Thread[Worker-6,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-6,5,main]" is proceeding but "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater$ModuleUpdateJob$Queue" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater$ModuleUpdateJob.<init>(J2EEComponentClasspathUpdater.java:219)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.<init>(J2EEComponentClasspathUpdater.java:199)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.init(J2EEComponentClasspathUpdater.java:88)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.getInstance(J2EEComponentClasspathUpdater.java:81)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:348)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 27 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater$ModuleUpdateJob.<init>(J2EEComponentClasspathUpdater.java:219)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.<init>(J2EEComponentClasspathUpdater.java:199)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.init(J2EEComponentClasspathUpdater.java:88)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathUpdater.getInstance(J2EEComponentClasspathUpdater.java:81)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:348)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:34.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator$ClasspathDependencyValidatorData", thread "Thread[Worker-4,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.jst.j2ee.internal.classpathdep.ClasspathDependencyValidator$ClasspathDependencyValidatorData" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:335)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:289)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:228)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestReferences(J2EEModuleVirtualComponent.java:161)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:126)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:116)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob$1.run(DependencyGraphImpl.java:324)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob.run(DependencyGraphImpl.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 23 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:335)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:289)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:228)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestReferences(J2EEModuleVirtualComponent.java:161)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:126)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:116)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob$1.run(DependencyGraphImpl.java:324)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob.run(DependencyGraphImpl.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:39.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.classpathdep.IClasspathDependencyConstants$DependencyAttributeType", thread "Thread[Worker-4,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-4,5,main]" is proceeding but "org.eclipse.jst.j2ee.classpathdep.IClasspathDependencyConstants$DependencyAttributeType" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:338)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:289)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:228)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestReferences(J2EEModuleVirtualComponent.java:161)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:126)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:116)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob$1.run(DependencyGraphImpl.java:324)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob.run(DependencyGraphImpl.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 23 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:338)
+	at org.eclipse.jst.j2ee.classpathdep.ClasspathDependencyUtil.getComponentClasspathDependencies(ClasspathDependencyUtil.java:289)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getJavaClasspathReferences(J2EEModuleVirtualComponent.java:228)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getNonManifestReferences(J2EEModuleVirtualComponent.java:161)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:126)
+	at org.eclipse.jst.j2ee.componentcore.J2EEModuleVirtualComponent.getReferences(J2EEModuleVirtualComponent.java:116)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob$1.run(DependencyGraphImpl.java:324)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.wst.common.componentcore.internal.builder.DependencyGraphImpl$GraphUpdateJob.run(DependencyGraphImpl.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:44.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer$LastUpdate", thread "Thread[Worker-6,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-6,5,main]" is proceeding but "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer$LastUpdate" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.<init>(J2EEComponentClasspathContainer.java:105)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:350)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.<init>(J2EEComponentClasspathContainer.java:105)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:350)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 0 2015-05-06 19:19:49.578
+!MESSAGE While loading class "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainerUtils", thread "Thread[Worker-6,5,main]" timed out waiting (5000ms) for thread "Thread[org.eclipse.jdt.internal.ui.text.JavaReconciler,1,main]" to finish starting bundle "org.eclipse.jst.j2ee_1.1.301.me201003162025 [668]". To avoid deadlock, thread "Thread[Worker-6,5,main]" is proceeding but "org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainerUtils" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: State change in progress for bundle "reference:file:/C:/Program Files/Genuitec/Common/plugins/org.eclipse.jst.j2ee_1.1.301.me201003162025.jar" by thread "org.eclipse.jdt.internal.ui.text.JavaReconciler".
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.update(J2EEComponentClasspathContainer.java:248)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:351)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	... 24 more
+Root exception:
+org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.beginStateChange(AbstractBundle.java:1073)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:278)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:408)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:111)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:449)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:211)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:381)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:457)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:410)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:105)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:252)
+	at java.lang.ClassLoader.loadClassInternal(ClassLoader.java:320)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.update(J2EEComponentClasspathContainer.java:248)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathContainer.install(J2EEComponentClasspathContainer.java:351)
+	at org.eclipse.jst.j2ee.internal.common.classpath.J2EEComponentClasspathInitializer.initialize(J2EEComponentClasspathInitializer.java:47)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:2642)
+	at org.eclipse.jdt.internal.core.JavaModelManager$11.run(JavaModelManager.java:2548)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1800)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:2588)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:1808)
+	at org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:3410)
+	at org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:35)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2015-05-06 19:22:06.109
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2015-05-06 19:22:06.109
+!MESSAGE Conflict for 'com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug':
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@1c3ca1d,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@10a4f71,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-06 20:50:32.093
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-06 20:50:32.484
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-06 20:50:32.484
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-06 20:50:32.484
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+!SESSION 2015-05-07 18:53:45.890 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:53:58.046
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:53:58.062
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:53:58.062
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:53:58.062
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-05-07 18:53:59.828
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY org.eclipse.jface 2 0 2015-05-07 18:54:10.890
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-07 18:54:10.890
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@1599f38,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2015-05-07 18:54:11.609
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2015-05-07 18:54:11.609
+!MESSAGE Conflict for 'com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug':
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@7e0ef9,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@93b3c,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: EASIEConstant_text_serverhasbeenshutdown in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: CustomDeploymentServer_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: CustomDeploymentServer_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: CustomDeploymentServer_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.390
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerConfigAction_menuitem_configure in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerStartAction_error_startingserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerStartAction_menuitem_debugserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerRestartAction_menuitem_restart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerRestartAction_server_restart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerRestartAction_restart_job_status in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerStartAction_menuitem_runserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerShutdownAction_menuitem_stop in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerStartAction_menuitem_start in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers3_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver3_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_startrestart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerShutdownAction_job_shuttingdown_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.406
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_noenabledservers in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: ServerStartAction_error_configurationonstartup in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_configureserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: LauncherModesPreferencePage_dialog_errorcreatinglaunchconfig_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-07 18:54:17.421
+!MESSAGE NLS unused message: LauncherModesPreferencePage_dialog_errorcreatinglaunchconfig_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.maven.ide.eclipse 4 0 2015-05-07 18:54:34.234
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Transfer for nexus-maven-repository-index.properties failed; Transfer error: null
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:693)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2013-05-09 15:02:45.531 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:34.640
+!MESSAGE NLS unused message: WizardNewFileCreationPage_title in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:34.671
+!MESSAGE NLS unused message: WizardNewFileCreationPage_errorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:34.671
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorTitle in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:34.671
+!MESSAGE NLS unused message: WizardNewFileCreationPage_internalErrorMessage in: com.genuitec.eclipse.springframework.messages
+
+!ENTRY com.genuitec.eclipse.core 1 0 2013-05-09 15:03:36.640
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY org.eclipse.jface 2 0 2013-05-09 15:03:47.500
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2013-05-09 15:03:47.500
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@3e65be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2013-05-09 15:03:47.750
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2013-05-09 15:03:47.750
+!MESSAGE Conflict for 'com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug':
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@1429bbb,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@1fe3aa4,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: EASIEConstant_text_serverhasbeenshutdown in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: CustomDeploymentServer_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: CustomDeploymentServer_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: CustomDeploymentServer_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerConfigAction_menuitem_configure in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_error_startingserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_menuitem_debugserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerRestartAction_menuitem_restart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerRestartAction_server_restart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerRestartAction_restart_job_status in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_menuitem_runserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerShutdownAction_menuitem_stop in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_menuitem_start in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers3_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver3_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_startrestart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerShutdownAction_job_shuttingdown_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_noenabledservers in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_error_configurationonstartup in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_configureserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: LauncherModesPreferencePage_dialog_errorcreatinglaunchconfig_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2013-05-09 15:03:52.953
+!MESSAGE NLS unused message: LauncherModesPreferencePage_dialog_errorcreatinglaunchconfig_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.maven.ide.eclipse 4 0 2013-05-09 15:04:09.796
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Transfer for nexus-maven-repository-index.properties failed; Transfer error: null
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:693)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-05-10 13:32:57.390 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.genuitec.eclipse.core 1 0 2015-05-10 13:33:10.109
+!MESSAGE Unable to locate .myeclipse.properties file
+
+!ENTRY org.eclipse.jface 2 0 2015-05-10 13:33:23.562
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-05-10 13:33:23.562
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.datatools.sqltools.result.removeAllInstances,Remove All Visible Results,
+		,
+		Category(org.eclipse.datatools.sqltools.result.category,SQL Results View,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,Cut,
+		Cut the selection to the clipboard,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@3da1e2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2015-05-10 13:33:23.875
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2015-05-10 13:33:23.875
+!MESSAGE Conflict for 'com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug':
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@1c2841d,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=com.genuitec.eclipse.ast.deploy.core.runonservershortcut.debug,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@16fa677,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.234
+!MESSAGE NLS unused message: EASIEConstant_text_serverhasbeenshutdown in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.234
+!MESSAGE NLS unused message: CustomDeploymentServer_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: CustomDeploymentServer_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: CustomDeploymentServer_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: CustomDeploymentServerSuffixed_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_typename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_instanceid in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: ExternallyLaunchedServer_server_instancename in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: ServerConfigAction_menuitem_configure in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.250
+!MESSAGE NLS unused message: ServerStartAction_error_startingserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_menuitem_debugserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerRestartAction_menuitem_restart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerRestartAction_server_restart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerRestartAction_restart_job_status in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_menuitem_runserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerShutdownAction_menuitem_stop in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_menuitem_start in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_noconfiguredservers3_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_dialog_nodefaultserver3_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_startrestart in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerShutdownAction_job_shuttingdown_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_noenabledservers in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_error_configurationonstartup in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerDropdownAction_menuitem_configureserver in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors1_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: ServerStartAction_dialog_saveeditors2_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: prompt.optclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: prompt.preclasspath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: prompt.optlibrarypath in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: LauncherModesPreferencePage_dialog_errorcreatinglaunchconfig_title in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.eclipse.osgi 2 1 2015-05-10 13:33:30.265
+!MESSAGE NLS unused message: LauncherModesPreferencePage_dialog_errorcreatinglaunchconfig_message in: com.genuitec.eclipse.easie.core.configuration
+
+!ENTRY org.maven.ide.eclipse 4 0 2015-05-10 13:33:52.515
+!MESSAGE Unable to update index for central|http://repo1.maven.org/maven2
+!STACK 0
+java.io.IOException: Transfer for nexus-maven-repository-index.properties failed; Transfer error: Connection timed out: no further information
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$WagonFetcher.retrieve(DefaultIndexUpdater.java:693)
+	at org.sonatype.nexus.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:22)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.downloadIndexProperties(DefaultIndexUpdater.java:493)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.access$100(DefaultIndexUpdater.java:74)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater$IndexAdaptor.setProperties(DefaultIndexUpdater.java:780)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:954)
+	at org.sonatype.nexus.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:138)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1060)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager.updateIndex(NexusIndexManager.java:1013)
+	at org.maven.ide.eclipse.internal.index.NexusIndexManager$1.run(NexusIndexManager.java:624)
+	at org.maven.ide.eclipse.internal.index.IndexUpdaterJob.run(IndexUpdaterJob.java:71)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

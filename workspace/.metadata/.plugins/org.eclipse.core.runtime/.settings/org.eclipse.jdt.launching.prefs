@@ -1,0 +1,3 @@
+#Sun May 10 13:34:33 CST 2015
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="1426942370414">\r\n<vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n<vm id\="1426942370414" name\="com.sun.java.jdk.win32.x86_1.6.0.013" path\="F\:\\myeclipse\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013"/>\r\n<vm id\="pulse_com.sun.java.jdk.win32.x86_1.6.0.013" javadocURL\="http\://java.sun.com/javase/6/docs/api/" name\="Sun JDK 1.6.0_13" path\="C\:\\Program Files\\Genuitec\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013"/>\r\n</vmType>\r\n</vmSettings>\r\n

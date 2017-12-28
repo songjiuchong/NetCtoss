@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+	
+	<!--角色管理模块role-->
+	<package name="role" namespace="/role" extends="netctoss">
+		
+		<!--查询角色管理的Action-->
+		<action name="findRole" class="com.netctoss.action.role.FindRoleAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<param name="pageSize">3</param>
+			<result name="success">
+				/WEB-INF/role/findRole.jsp
+			</result>
+		</action>
+		
+		<!--跳转到新增页面的Action-->
+		<action name="toAddRole" class="com.netctoss.action.role.ToAddRoleAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/role/addRole.jsp
+			</result>
+		</action>
+		
+		<!--新增保存的Action-->
+		<action name="addRole" class="com.netctoss.action.role.AddRoleAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>		
+			<result name="success" type="redirectAction">
+				findRole
+			</result>
+		</action>
+		
+		<!--跳转到修改页面的Action-->
+		<action name="toUpdateRole" class="com.netctoss.action.role.ToUpdateRoleAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/role/updateRole.jsp
+			</result>
+		</action>
+		
+		<!--修改保存的Action-->
+		<action name="updateRole" class="com.netctoss.action.role.UpdateRoleAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findRole
+			</result>
+		</action>
+		
+		<!--删除角色的Action-->
+		<action name="deleteRole" class="com.netctoss.action.role.DeleteRoleAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+		<!--验证角色名是否已被占用的Action-->
+		<action name="updateRoleValidate" class="com.netctoss.action.role.UpdateRoleValidateAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+	</package>
+	
+</struts>
+
+

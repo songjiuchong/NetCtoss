@@ -1,0 +1,14 @@
+四月 13, 2015 6:49:02 下午 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+信息: Package starting up at Mon Apr 13 18:49:02 CST 2015
+四月 13, 2015 6:49:04 下午 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+信息: Latest version of package has already been enabled in the workspace; check finished in 16ms
+四月 13, 2015 7:13:36 下午 org.hibernate.eclipse.HibernatePlugin start
+信息: HibernatePlugin Started
+四月 13, 2015 7:13:37 下午 org.hibernate.cfg.Environment <clinit>
+信息: Hibernate 3.2.5
+四月 13, 2015 7:13:37 下午 org.hibernate.cfg.Environment <clinit>
+信息: hibernate.properties not found
+四月 13, 2015 7:13:37 下午 org.hibernate.cfg.Environment buildBytecodeProvider
+信息: Bytecode provider name : cglib
+四月 13, 2015 7:13:37 下午 org.hibernate.cfg.Environment <clinit>
+信息: using JDK 1.4 java.sql.Timestamp handling

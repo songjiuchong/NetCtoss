@@ -1,0 +1,41 @@
+package com.netctoss.action.account;
+
+public class UpdateAccountPswValidate {
+	
+	//输入属性;
+	private String oldPassword;
+	private Integer id;
+	
+	//输出属性;
+	private boolean pass;
+	
+	public String execute(){
+		
+		return "success";
+	}
+
+	public String getOldPassword() {
+		return oldPassword;
+	}
+
+	public void setOldPassword(String oldPassword) {
+		this.oldPassword = oldPassword;
+	}
+
+	public boolean isPass() {
+		return pass;
+	}
+
+	public void setPass(boolean pass) {
+		this.pass = pass;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+}

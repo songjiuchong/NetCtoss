@@ -1,0 +1,238 @@
+package com.netctoss.dao.account;
+
+import java.sql.Date;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.netctoss.dao.DAOException;
+import com.netctoss.dao.DAOFactory;
+import com.netctoss.pojo.Account;
+import com.netctoss.util.HibernateUtil;
+
+public class HibernateAccountDao implements IAccountDao{
+	
+	//根据Account对象为数据库添加一条账务账号数据;
+	public void addAccount(Account account) throws DAOException {
+		if(account==null){
+			return;
+		}
+		Session session = HibernateUtil.getSession();
+		Transaction ts = session.beginTransaction();
+		session.save(account);
+		ts.commit();
+	}
+	
+	//根据id,更新此数据的状态为2,同时将删除日期设置为系统时间;
+	public void deleteAccount(int id) throws DAOException {
+		Session session = HibernateUtil.getSession();
+		Transaction ts = session.beginTransaction();
+		Account account = (Account)session.load(Account.class,id);
+		account.setStatus("2");
+		account.setCloseDate(new Date(new java.util.Date().getTime()));
+		session.update(account);
+		ts.commit();
+	}
+	
+	//根据accountId(也就是ACCOUNT表中的ID)来查找Account对象;
+	public Account findAccountById(Integer accountId) throws DAOException {
+		try{
+			Session session = HibernateUtil.getSession();
+			Account account = (Account)session.load(Account.class, accountId);
+			//为了让页面不显示时分秒,所以需要用java.sql.Date来将原本保存java.util.Date类型的String参数转换为保存java.sql.Date类型的String参数;
+			String birthDate = account.getBirthDate();
+			SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+			java.util.Date date=sdf.parse(birthDate);
+			Date d = new Date(date.getTime());
+			birthDate=sdf.format(d);
+			account.setBirthDate(birthDate);
+			return account;
+		}catch(Exception e){
+			e.printStackTrace();
+			throw new DAOException("根据ID查询Account对象失败！",e);
+		}
+	}
+	
+	//根据身份证查询对应的账务账号;
+	public Account findAccountByIdCardNo(String idcardNo) throws DAOException {
+		if(idcardNo == null)
+			return null;
+		String hql = "from Account where idcardNo=? ";
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(hql);
+		query.setString(0,idcardNo);
+		Account account = (Account)query.uniqueResult();
+		return account;
+	}
+	
+	//根据账务账号名查找一条记录;
+	public Account findByAccountName(String accountName) throws DAOException {
+		String hql = "from Account where loginName=? ";
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(hql);
+		query.setString(0, accountName);
+		Account account = (Account)query.uniqueResult();
+		return account;
+	}
+	
+	//根据所给查询条件查询账务账号;
+	public List<Account> findByCondition(String idcardNo, String realName,
+			String loginName, String status, int page, int pageSize)
+			throws DAOException {
+		
+		List<Object> params = new ArrayList<Object>();
+		StringBuffer sb = new StringBuffer("from Account where 1=1 ");
+		if(idcardNo!=null && idcardNo.length()>0){
+			sb.append("and idcardNo=? ");
+			params.add(idcardNo);
+		}
+		if(realName!=null && realName.length()>0){
+			sb.append("and realName=? ");
+			params.add(realName);
+		}
+		if(loginName!=null && loginName.length()>0){
+			sb.append("and loginName=? ");
+			params.add(loginName);
+		}
+		if(status!=null && !status.equals("-1")){
+			sb.append("and status=? ");
+			params.add(status);
+		}
+		//根据ID字段排序;
+		sb.append("order by id ");
+		//执行上述HQL;
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(sb.toString());
+		query.setFirstResult((page-1)*pageSize);
+		query.setMaxResults(pageSize);
+		//设置参数;
+		for(int i=0;i<params.size();i++){
+			query.setParameter(i, params.get(i));
+		}
+		//执行;
+		List<Account> list = query.list();
+		return list;
+	}
+	
+	//根据页容量查询所有数据一共可以分为几页,返回总页数;
+	public int findTotalPage(String idcardNo, String realName,
+			String loginName, String status, int pageSize) throws DAOException {
+		//构造查询的SQL;
+		List<Object> params = new ArrayList<Object>();
+		String hql = createFindTotalPageSQL(idcardNo,realName,loginName,status,params);
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(hql);
+		for(int i=0;i<params.size();i++){
+			query.setParameter(i,params.get(i));
+		}
+		//执行;
+		Long size = (Long)query.uniqueResult();
+		if(size%pageSize==0){
+			return size.intValue()/pageSize;
+		}else{
+			return size.intValue()/pageSize+1;
+		}
+	}
+	
+	//根据所给的查询条件构造查找总页数的SQL查询语句;
+	private String createFindTotalPageSQL(String idcardNo, String realName,
+			String loginName,String status,List<Object> params){
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("select count(*) from Account a where 1=1 ");
+		if(idcardNo!=null && idcardNo.length()>0){
+			sb.append("and idcardNo=? ");
+			params.add(idcardNo);
+		}
+		if(realName!=null && realName.length()>0){
+			sb.append("and realName=? ");
+			params.add(realName);
+		}
+		if(loginName!=null && loginName.length()>0){
+			sb.append("and loginName=? ");
+			params.add(loginName);
+		}
+		if(status!=null && !status.equals("-1")){
+			sb.append("and status=? ");
+			params.add(status);
+		}
+		return sb.toString();
+	}
+	
+	//根据id,更新此数据的状态为1,同时将暂停日期设置为系统时间;
+	public void pauseAccount(int id) throws DAOException {
+		String hql = "update Account set status=1,pauseDate=? where id=? ";
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		Query query = session.createQuery(hql);
+		query.setDate(0,new Date(new java.util.Date().getTime()));
+		query.setInteger(1,id);
+		query.executeUpdate();
+		tx.commit();
+	}
+	
+	//根据id,更新此数据的状态为0,同时将暂停日期的字段的值清空;
+	//由于表中的birthday字段是Date类型,在POJO处是String类型,这里需要通过HQL来实现;
+	public void startAccount(int id) throws DAOException {
+		String hql = "update Account set status=0,pauseDate=null where id=? ";
+		try {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		Query query = session.createQuery(hql);
+		query.setInteger(0,id);
+		query.executeUpdate();
+		tx.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new DAOException("更新状态为开通失败!",e);
+		}
+
+	}
+	
+	//根据传入参数进行更新Account记录;
+	//由于表中的birthday字段是Date类型,在POJO处是String类型,而HQL中无法使用to_date,to_char函数,所以这里只能使用native sql;
+	public void updateAccount(Account account) throws DAOException {
+			String updateAccountSql = 
+			"update ACCOUNT "+
+			"set REAL_NAME=?,LOGIN_PASSWD=?,TELEPHONE=?,RECOMMENDER_ID=?,EMAIL=?,OCCUPATION=?,GENDER=?,MAILADDRESS=?,ZIPCODE=?,QQ=? "+
+			"where ID=? "; 
+	try {
+		Session session = HibernateUtil.getSession();
+		SQLQuery query = session.createSQLQuery(updateAccountSql);
+		Transaction tx = session.beginTransaction();
+		query.setParameter(0,account.getRealName());
+		query.setParameter(1,account.getLoginPassword());
+		query.setParameter(2,account.getTelephone());
+		query.setParameter(3,account.getRecommenderId());
+		query.setParameter(4,account.getEmail());
+		query.setParameter(5,account.getOccupation());
+		query.setParameter(6,account.getGender());
+		query.setParameter(7,account.getMailAddress());
+		query.setParameter(8,account.getZipCode());
+		query.setParameter(9,account.getQq());
+		query.setParameter(10,account.getId());
+		query.executeUpdate();
+		tx.commit();
+	} catch (Exception e) {
+		e.printStackTrace();
+		throw new DAOException("更新Account记录失败!",e);
+	}
+
+}
+	
+	
+	//测试:
+	public static void main(String [] args){
+		IAccountDao dao = DAOFactory.getIAccountDao();
+		try {
+			dao.startAccount(1015);
+		} catch (DAOException e) {
+			e.printStackTrace();
+		}
+	}
+}

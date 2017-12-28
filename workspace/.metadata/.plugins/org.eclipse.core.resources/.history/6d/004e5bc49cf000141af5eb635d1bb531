@@ -1,0 +1,364 @@
+package com.netctoss.dao.account;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.netctoss.dao.DAOException;
+import com.netctoss.pojo.Account;
+import com.netctoss.pojo.Service;
+import com.netctoss.util.DBUtil;
+
+public class AccountDaoImpl implements IAccountDao{
+	
+	//根据所给查询条件查询账务账号;
+	public List<Account> findByCondition(String idcardNo, String realName,
+			String loginName, String status, int page, int pageSize) 
+			throws DAOException {
+		
+		List<Object> params = new ArrayList<Object>();
+		String sql = createFindSQL(idcardNo,realName,loginName,status,params,page,pageSize);
+		List<Account> list = null;
+		 try{
+			Connection con = DBUtil.getConnection();
+		 	PreparedStatement ps = con.prepareStatement(sql);
+		 	for(int i=0;i<params.size();i++){
+		 	ps.setObject(i+1, params.get(i));
+		 	}
+		 	ResultSet rs = ps.executeQuery();
+		 	while(rs.next()){
+		 		Account c = createAccount(rs);
+		 		if(list==null)
+		 		list = new ArrayList<Account>();
+		 		list.add(c);
+		 	}
+		 return list;
+		 }catch(SQLException e){
+		 	e.printStackTrace();
+		 	throw new DAOException("查询账务账号数据时发生错误!",e);
+		 }finally{
+		 	DBUtil.closeConnection();
+		 }
+	}
+	
+	
+	//查询总页数;
+	public int findTotalPage(String idcardNo, String realName,
+			String loginName, String status,int pageSize) throws DAOException {
+		//构造查询的SQL;
+		List<Object> params = new ArrayList<Object>();
+		String sql = createFindTotalPageSQL(idcardNo,realName,loginName,status,params);
+		try{
+				Connection con = DBUtil.getConnection();
+			 	PreparedStatement ps = con.prepareStatement(sql);
+			 	for(int i=0;i<params.size();i++){
+			 		ps.setObject(i+1,params.get(i));
+			 	}
+			 	ResultSet rs = ps.executeQuery();
+			 	rs.next();
+			 	int rows = rs.getInt(1); //取得这一条结果集中第一列的数据,得到总行数;
+			 	if(rows%pageSize==0){
+			 		//如果整除,则返回相除的值;
+			 		return rows/pageSize;
+			 	}else{
+			 		//有余数的情况下,进位取整;
+			 		return rows/pageSize+1;
+			 	}
+			 }catch(SQLException e){
+			 	e.printStackTrace();
+			 	throw new DAOException("查询总页数时发生错误!",e);
+			 }finally{
+			 	DBUtil.closeConnection();
+			 }	
+	}
+	
+	
+	//根据一条查询结果创建一个account对象;
+	private Account createAccount(ResultSet rs) throws SQLException{
+		Account c = new Account();
+		c.setId(rs.getInt("ID"));
+		c.setRecommenderId(rs.getInt("RECOMMENDER_ID"));
+		c.setLoginName(rs.getString("LOGIN_NAME"));
+		c.setLoginPassword(rs.getString("LOGIN_PASSWD"));
+		c.setStatus(rs.getString("STATUS"));
+		c.setCreateDate(rs.getDate("CREATE_DATE"));
+		c.setPauseDate(rs.getDate("PAUSE_DATE"));
+		c.setCloseDate(rs.getDate("CLOSE_DATE"));
+		c.setRealName(rs.getString("REAL_NAME"));
+		c.setIdcardNo(rs.getString("IDCARD_NO"));
+		c.setBirthDate(rs.getDate("BIRTHDATE")!=null? new SimpleDateFormat("yyyy-MM-dd").format(rs.getDate("BIRTHDATE")):null);
+		c.setGender(rs.getString("GENDER"));
+		c.setOccupation(rs.getString("OCCUPATION"));
+		c.setTelephone(rs.getString("TELEPHONE"));
+		c.setEmail(rs.getString("EMAIL"));
+		c.setMailAddress(rs.getString("MAILADDRESS"));
+		c.setZipCode(rs.getString("ZIPCODE"));
+		c.setQq(rs.getString("QQ"));
+		c.setLastLoginTime(rs.getDate("LAST_LOGIN_TIME"));
+		c.setLastLoginIp(rs.getString("LAST_LOGIN_IP"));
+		return c;
+	}
+	
+	//根据Account对象为数据库添加一条账务账号数据;
+	private String addAccountSql = 
+			"insert into "+
+			"ACCOUNT(ID,REAL_NAME,IDCARD_NO,LOGIN_NAME,LOGIN_PASSWD,TELEPHONE,RECOMMENDER_ID,BIRTHDATE,EMAIL,OCCUPATION,GENDER,MAILADDRESS,ZIPCODE,QQ,CREATE_DATE,STATUS) "+
+			"values(account_seq.nextval,?,?,?,?,?,?,to_date(?,'yyyy-mm-dd'),?,?,?,?,?,?,sysdate,'0')"; //参考account_seq.sql;
+	
+	public void addAccount(Account account) throws DAOException {
+		if(account==null){
+			return;
+		}
+		try {
+			Connection con = DBUtil.getConnection();
+			PreparedStatement ps = con.prepareStatement(addAccountSql);
+			ps.setObject(1,account.getRealName());
+			ps.setObject(2,account.getIdcardNo());
+			ps.setObject(3,account.getLoginName());
+			ps.setObject(4,account.getLoginPassword());
+			ps.setObject(5,account.getTelephone());
+			ps.setObject(6,account.getRecommenderId());
+			ps.setObject(7,account.getBirthDate());
+			ps.setObject(8,account.getEmail());
+			ps.setObject(9,account.getOccupation());
+			ps.setObject(10,account.getGender());
+			ps.setObject(11,account.getMailAddress());
+			ps.setObject(12,account.getZipCode());
+			ps.setObject(13,account.getQq());
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new DAOException("新增账务账号数据失败",e);
+		} finally{
+			DBUtil.closeConnection();
+		}
+	}
+	
+	//根据所给的查询条件构造账务账号SQL查询语句;
+	private String createFindSQL(String idcardNo, String realName,
+			String loginName, String status,List<Object> params, int page, int pageSize){
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("select x.*,rownum n from (select * from ACCOUNT order by ID) x where 1=1 ");
+		if(idcardNo!=null && idcardNo.length()>0){
+			sb.append("and IDCARD_NO=? ");
+			params.add(idcardNo);
+		}
+		if(realName!=null && realName.length()>0){
+			sb.append("and REAL_NAME=? ");
+			params.add(realName);
+		}
+		if(loginName!=null && loginName.length()>0){
+			sb.append("and LOGIN_NAME=? ");
+			params.add(loginName);
+		}
+		if(status!=null && !status.equals("-1")){
+			sb.append("and STATUS=? ");
+			params.add(status);
+		}
+		
+		sb.append("and rownum<? ");
+		
+		//小于下一页的最小行;
+		int nextMin = page*pageSize+1;
+		params.add(nextMin);
+		
+		String sql = "select * from ("
+			+sb.toString()
+			+") where n>?";
+		
+		//大于上一页的最大行;
+		int lastMax = (page-1)*pageSize;
+		params.add(lastMax);
+		
+		return sql;
+	}
+	
+	//根据所给的查询条件构造查找总页数的SQL查询语句;
+	private String createFindTotalPageSQL(String idcardNo, String realName,
+			String loginName,String status,List<Object> params){
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("select count(*) from ACCOUNT a where 1=1 ");
+		if(idcardNo!=null && idcardNo.length()>0){
+			sb.append("and IDCARD_NO=? ");
+			params.add(idcardNo);
+		}
+		if(realName!=null && realName.length()>0){
+			sb.append("and REAL_NAME=? ");
+			params.add(realName);
+		}
+		if(loginName!=null && loginName.length()>0){
+			sb.append("and LOGIN_NAME=? ");
+			params.add(loginName);
+		}
+		if(status!=null && !status.equals("-1")){
+			sb.append("and STATUS=? ");
+			params.add(status);
+		}
+		return sb.toString();
+	}
+	
+	//根据id更新开通状态;
+	public void startAccount(int id) throws DAOException {
+		String sql="update ACCOUNT set STATUS=0,PAUSE_DATE=null where ID=?";
+		try {
+			Connection con = DBUtil.getConnection();
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setInt(1,id);
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new DAOException("更新状态为开通失败",e);
+		}finally{
+			DBUtil.closeConnection();
+		}
+	}
+	
+	//根据id更新暂停状态;
+	public void pauseAccount(int id) throws DAOException {
+		String sql="update ACCOUNT set STATUS=1,PAUSE_DATE=SYSDATE where ID=?";
+		try {
+			Connection con = DBUtil.getConnection();
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setInt(1,id);
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new DAOException("更新状态为暂停失败",e);
+		}finally{
+			DBUtil.closeConnection();
+		}
+	}
+	
+	//根据id更新删除状态;
+	public void deleteAccount(int id) throws DAOException {
+		String sql = "update ACCOUNT set STATUS=2,CLOSE_DATE=SYSDATE where ID=?";
+			try {
+				Connection con = DBUtil.getConnection();
+				PreparedStatement ps = con.prepareStatement(sql);
+				ps.setInt(1,id);
+				ps.executeUpdate();
+			} catch (SQLException e) {
+				e.printStackTrace();
+				throw new DAOException("删除状态为暂停失败",e);
+			}finally{
+				DBUtil.closeConnection();
+			}	
+	}
+	
+	//根据账务帐号名查找是否存在此记录;
+	private String findByAccountNameSql="select * from ACCOUNT where LOGIN_NAME=?";
+	
+	public Account findByAccountName(String accountName) throws DAOException {
+		
+		if(accountName == null)
+			return null;
+		
+		 try{
+			Connection con = DBUtil.getConnection();
+		 	PreparedStatement ps = con.prepareStatement(findByAccountNameSql);
+		 	ps.setString(1,accountName);
+		 	ResultSet rs = ps.executeQuery();
+		 	while(rs.next()){
+		 		Account a = createAccount(rs);
+		 		return a;
+		 	}
+		 	return null;
+		 }catch(SQLException e){
+		 	e.printStackTrace();
+		 	throw new DAOException("根据账务账号名查询记录时发生异常!",e);
+		 }finally{
+		 	DBUtil.closeConnection();
+		 }
+	}
+	
+	//根据身份证查询对应的账务账号;
+	public Account findAccountByIdCardNo(String idcardNo) throws DAOException {
+		if(idcardNo == null)
+			return null;
+		String sql = "select * from ACCOUNT where IDCARD_NO=? ";
+		try {
+			Connection con = DBUtil.getConnection();
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setObject(1,idcardNo);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()){
+				Account a = createAccount(rs);
+				return a;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new DAOException("根据身份证查询账务账号失败!",e);
+		}finally{
+			DBUtil.closeConnection();
+		}
+		return null;
+	}
+	
+	//根据accountId(也就是ACCOUNT表中的ID)来查找Account对象;
+	public Account findAccountById(Integer accountId) throws DAOException {
+		if(accountId == null)
+			return null;
+		String sql = "select * from ACCOUNT where ID=? ";
+		try {
+			Connection con = DBUtil.getConnection();
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setObject(1,accountId);
+			ResultSet rs = ps.executeQuery();
+			while(rs.next()){
+				Account a = createAccount(rs);
+				return a;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new DAOException("根据accountID查询账务账号失败!",e);
+		}finally{
+			DBUtil.closeConnection();
+		}
+		return null;
+	}
+	
+	//根据传入参数进行更新Account记录;
+	private String updateAccountSql = 
+		"udpate ACCOUNT "+
+		"set REAL_NAME=?,LOGIN_PASSWD=?,TELEPHONE=?,RECOMMENDER_ID=?,BIRTHDATE=?,EMAIL=?,OCCUPATION=?,GENDER=?,MAILADDRESS=?,ZIPCODE=?,QQ=? "+
+		"where ID=? "; 
+	public void updateAccount(Account account) throws DAOException {
+		try {
+			Connection con = DBUtil.getConnection();
+			PreparedStatement ps = con.prepareStatement(updateAccountSql);
+			ps.setObject(1,account.getRealName());
+			ps.setObject(2,account.getLoginPassword());
+			ps.setObject(3,account.getTelephone());
+			ps.setObject(4,account.getRecommenderId());
+			ps.setObject(5,account.getBirthDate());
+			ps.setObject(6,account.getEmail());
+			ps.setObject(7,account.getOccupation());
+			ps.setObject(8,account.getGender());
+			ps.setObject(9,account.getMailAddress());
+			ps.setObject(10,account.getZipCode());
+			ps.setObject(11,account.getQq());
+			ps.setObject(12,account.getId());
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new DAOException("更新账务账号信息失败！",e);
+		} finally{
+			DBUtil.closeConnection();
+		}
+	}
+	
+	
+	//test;
+	public static void main(String[] args) throws Exception{
+		IAccountDao dao = new AccountDaoImpl();
+		Account account = dao.findAccountById(134);
+		System.out.println(account.getOccupation());
+	}
+
+}

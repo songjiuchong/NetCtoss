@@ -1,0 +1,61 @@
+package com.netctoss.action;
+
+import com.netctoss.dao.DAOException;
+import com.netctoss.dao.DAOFactory;
+import com.netctoss.dao.IAdminDao;
+import com.netctoss.pojo.Admin;
+
+public abstract class LoginAction extends BaseAction{
+	
+	//输入属性:
+	private Admin admin;
+	
+	public Admin getAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(Admin admin) {
+		this.admin = admin;
+	}
+
+	
+	//输出属性:
+	private String errorMsg;
+	
+	public String execute(){
+		
+		//1,调用DAO根据输入属性查询是否存在该用户;
+		IAdminDao dao = DAOFactory.getAdminDao();
+		Admin a = null;
+		try {
+			a = dao.findByCodeAndPassword(admin.getAdminCode(),admin.getPassword());
+		} catch (DAOException e) {
+			e.printStackTrace();
+			//如果发生异常返回到登录页面,同时将异常信息通过输出属性给用户作为提醒;
+			errorMsg = e.getMessage();
+			return "error";
+		}
+		//2,判断查询结果是否为空;
+		if(a == null){
+			//2.1,如果为空则返回error;
+			errorMsg = "账号或密码错误！";
+			return "error";
+		}else{
+			//2.2,如果不为空则将用户写入session,返回success;
+			session.put("admin", a);
+			return "success";
+		}
+		
+	}
+
+	public String getErrorMsg() {
+		return errorMsg;
+	}
+
+	public void setErrorMsg(String errorMsg) {
+		this.errorMsg = errorMsg;
+	}
+	
+	
+	
+}

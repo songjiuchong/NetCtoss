@@ -1,0 +1,15 @@
+package com.netctoss.action.account;
+
+public class UpdateAccountRidValidate {
+	
+	//输入属性;
+	private Integer recommenderIdCardNo;
+	
+	//输出属性;
+	private boolean pass;
+	
+	public String execute(){
+		
+		return "success";
+	}
+}

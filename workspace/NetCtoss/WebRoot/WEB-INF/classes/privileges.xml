@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<privileges>
+	<privilege id="1">
+		<name>角色管理</name>
+		<urls>
+			<url>/findRole.action</url>
+			<url>/toAddRole.action</url>
+			<url>/addRole.action</url>
+			<url>/toUpdateRole.action</url>
+			<url>/updateRole.action</url>
+			<url>/deleteRole.action</url>
+		</urls>
+	</privilege>
+	<privilege id="2">
+		<name>管理员</name>
+		<urls>
+			<url>/findAdmin.action</url>
+			<url>/toAddAdmin.action</url>
+			<url>/addAdmin.action</url>
+			<url>/toUpdateAdmin.action</url>
+			<url>/updateAdmin.action</url>
+			<url>/deleteAdmin.action</url>
+			<url>/resetPassword.action</url>
+		</urls>
+	</privilege>
+	<privilege id="3">
+		<name>资费管理</name>
+		<urls>
+			<url>/findCost.action</url>
+			<url>/addCost.action</url>
+			<url>/toUpdateCost.action</url>
+			<url>/updateCost.action</url>
+		</urls>
+	</privilege>
+	<privilege id="4">
+		<name>账务账号</name>
+		<urls>
+			<url>/findAccount.action</url>
+			<url>/addAccount.action</url>
+			<url>/toUpdateAccount.action</url>
+			<url>/updateAccount.action</url>
+			<url>/startAccount.action</url>
+			<url>/pauseAccount.action</url>
+			<url>/deleteAccount.action</url>
+			<url>/viewAccount.action</url>
+		</urls>
+	</privilege>
+	<privilege id="5">
+		<name>业务账号</name>
+		<urls>
+			<url>/findService.action</url>
+			<url>/toAddService.action</url>
+			<url>/addService.action</url>
+			<url>/toUpdateService.action</url>
+			<url>/updateService.action</url>
+			<url>/pauseService.action</url>
+			<url>/deleteService.action</url>
+		</urls>
+	</privilege>
+	<privilege id="6">
+		<name>账单</name>
+		<urls>
+			<url>/billList.action</url>
+			<url>/billItemList.action</url>
+			<url>/billServiceDetail.action</url>
+		</urls>
+	</privilege>
+	<privilege id="7">
+		<name>报表</name>
+		<urls>
+			<url>/report.action</url>
+		</urls>
+	</privilege>
+</privileges>

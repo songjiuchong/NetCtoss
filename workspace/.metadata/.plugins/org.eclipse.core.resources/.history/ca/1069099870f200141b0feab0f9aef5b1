@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+	
+	<!--登录模块login-->
+	<package name="login" namespace="/login" extends="netctoss"> 
+	
+		<!--跳转到登录页面的Action-->
+		<action name="toLogin" > <!-- class="com.netctoss.action.login.ToLoginAction" -->
+			<result name="success">
+				/WEB-INF/main/login.jsp
+			</result>
+		</action>
+		
+		<!--用户名是否存在异步验证的Action-->
+		<action name="loginValidate" class="com.netctoss.action.login.LoginValidateAction">
+			<!--登录成功进入到项目的首页-->
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>	
+		</action>
+		
+		<!--登录验证的Action-->
+		<action name="login" class="com.netctoss.action.login.LoginAction">
+			<!--登录成功进入到项目的首页-->
+			<result name="success">
+				/WEB-INF/main/index.jsp
+			</result>
+			<result name="loginAgain">
+				/WEB-INF/main/login.jsp
+			</result>
+		</action>
+		
+		<!--生成验证码图片的Action-->
+		<action name="validateCode" class="com.netctoss.action.login.ValidateCodeAction">
+			<!--使用stream类型的Result输出图片-->
+			<result name="success" type="stream">
+				<!--给Result注入参数,
+				即:将imageStream通过setInputName方法注入给Result中的inputName属性设置值-->
+				<param name="inputName">
+					imageStream
+				</param>
+			</result>
+		</action>
+		
+		<!--返回index.jsp页面的Action-->
+		<action name="toHomePage">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/main/index.jsp
+			</result>
+		</action>
+		
+		<!--退出/注销用户登录的Action-->
+		<action name="logout" class="com.netctoss.action.login.LogoutAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/main/login.jsp
+			</result>
+		</action>
+		
+	</package>
+	
+</struts>
+
+

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+<!-- name指定实体类,table指定数据表名 -->
+    <class name="com.netctoss.pojo.Account" table="ACCOUNT">
+    
+    	<!-- 主键字段映射描述 -->
+    	<!-- name指定属性名,type指定类型 -->
+        <id name="id" type="integer">
+        	<!-- name指定字段名 -->
+        	<column name="ID"/>
+        	<!-- 指定添加操作主键值如何生成 -->
+        	<generator class="native">
+        		<!-- 指定序列名为account_seq -->
+        		<param name="sequence">account_seq</param>
+        	</generator>
+        </id>
+        <!-- 非主键字段映射描述 -->
+        <property name="recommenderId" type="integer">
+        	<column name="RECOMMENDER_ID"/>
+        </property>
+        <property name="loginName" type="string">
+        	<column name="LOGIN_NAME"/>
+        </property>
+        <property name="loginPassword" type="string">
+        	<column name="LOGIN_PASSWD"/>
+        </property>
+        <property name="status" type="string">
+        	<column name="STATUS"/>
+        </property>         
+        <property name="createDate" type="date">
+        	<column name="CREATE_DATE"/>
+        </property>         
+        <property name="pauseDate" type="date">
+        	<column name="PAUSE_DATE"/>
+        </property>         
+        <property name="closeDate" type="date">
+        	<column name="CLOSE_DATE"/>
+        </property>   
+        <property name="realName" type="string">
+        	<column name="REAL_NAME"/>
+        </property>
+        <property name="idcardNo" type="string">
+        	<column name="IDCARD_NO"/>
+        </property>
+        <property name="birthDate" type="string">
+        	<column name="BIRTHDATE"/>
+        </property>
+        <property name="gender" type="string">
+        	<column name="GENDER"/>
+        </property>        
+        <property name="occupation" type="string">
+        	<column name="OCCUPATION"/>
+        </property> 
+        <property name="telephone" type="string">
+        	<column name="TELEPHONE"/>
+        </property>
+        <property name="email" type="string">
+        	<column name="EMAIL"/>
+        </property>
+        <property name="mailAddress" type="string">
+        	<column name="MAILADDRESS"/>
+        </property>
+        <property name="zipCode" type="string">
+        	<column name="ZIPCODE"/>
+        </property>
+        <property name="qq" type="string">
+        	<column name="QQ"/>
+        </property>
+        <property name="lastLoginTime" type="date">
+        	<column name="LAST_LOGIN_TIME"/>
+        </property>     
+        <property name="lastLoginIp" type="string">
+        	<column name="LAST_LOGIN_IP"/>
+        </property>    
+                                                                  
+        <!-- 描述services属性,采用一对多关系加载Service对象数据 -->
+        <!-- <set name="services" lazy="false" fetch="join"> -->
+        <set name="services" inverse="true" cascade="all">
+        	<!-- 指定关联条件的外键字段,默认与当前Account的主键关联 -->
+        	<key column="ACCOUNT_ID"></key>
+        	<!-- 指定了关联的类class路径 -->
+        	<one-to-many class="com.netctoss.pojo.Service"/>
+        </set>
+                      
+    </class>
+
+</hibernate-mapping>

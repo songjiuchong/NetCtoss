@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+<!-- name指定实体类,table指定数据表名 -->
+    <class name="com.netctoss.pojo.Role" table="ROLE">
+    
+    	<!-- 主键字段映射描述 -->
+    	<!-- name指定属性名,type指定类型 -->
+        <id name="id" type="integer">
+        	<!-- name指定字段名 -->
+        	<column name="ID"/>
+        	<!-- 指定添加操作主键值如何生成 -->
+        	<generator class="native">
+        		<!-- 指定序列名为role_seq -->
+        		<param name="sequence">role_seq</param>
+        	</generator>
+        </id>
+        <!-- 非主键字段映射描述 -->
+        <property name="name" type="string">
+        	<column name="NAME"/>
+        </property>
+                                                                  
+        <!-- 描述roles属性,采用多对多关系加载Role对象数据 -->
+        <set name="admins" table="ADMIN_ROLE">
+        	<!-- 指定关联条件的外键字段,默认与当前Role的主键关联 -->
+        	<key column="ROLE_ID"></key>
+        	<!-- 指定了关联的类class路径 -->
+        	<many-to-many class="com.netctoss.pojo.Admin"
+        	column="ADMIN_ID">
+        	</many-to-many>
+        </set>
+                      
+    </class>
+
+</hibernate-mapping>

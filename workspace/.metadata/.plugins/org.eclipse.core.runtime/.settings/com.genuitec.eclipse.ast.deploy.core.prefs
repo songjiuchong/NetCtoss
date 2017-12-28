@@ -1,0 +1,24 @@
+#Mon Apr 13 22:54:11 CST 2015
+myeclipseTomcatServer.NetCtoss.shouldBackup=false
+myeclipseTomcatServer.NetCtoss.isExploded=true
+tomcat5Server.NetCtoss.isExploded=true
+tomcat5Server.NetCtoss.shouldOverwrite=false
+tomcat5Server.NetCtoss.deployIsOverProject=false
+tomcat5Server.NetCtoss.IEARProjectName=
+myeclipseTomcatServer.NetCtoss.shouldOverwrite=false
+eclipse.preferences.version=1
+myeclipseTomcatServer.NetCtoss.IEARProjectName=
+myeclipseTomcatServer.NetCtoss.deployIsOverProject=false
+tomcat5Server.NetCtoss.altContextRoot=
+tomcat5Server.NetCtoss.isDeployed=true
+tomcat5Server.NetCtoss.contextRoot=/NetCtoss
+tomcat5Server.NetCtoss.isUptoDate=true
+myeclipseTomcatServer.NetCtoss.contextRoot=/NetCtoss
+myeclipseTomcatServer.NetCtoss.altContextRoot=
+tomcat5Server.NetCtoss.shouldBackup=false
+myeclipseTomcatServer.NetCtoss.deploymentPath=F\:\\myeclipse\\workspace\\.metadata\\.me_tcat\\webapps\\NetCtoss
+tomcat5Server.NetCtoss.type=WebDeployment
+myeclipseTomcatServer.NetCtoss.type=WebDeployment
+myeclipseTomcatServer.NetCtoss.isDeployed=true
+tomcat5Server.NetCtoss.deploymentPath=F\:\\alternative lab\\tomcat\\apache-tomcat-5.5.23\\webapps\\NetCtoss
+myeclipseTomcatServer.NetCtoss.isUptoDate=true

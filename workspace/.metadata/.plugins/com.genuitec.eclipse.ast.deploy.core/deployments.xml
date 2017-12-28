@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<deployments>
+  <deployment alt-context-root="" context-root="/NetCtoss" deployment-path="F:/alternative lab/tomcat/apache-tomcat-5.5.23/webapps/NetCtoss" project-name="NetCtoss" server-id="tomcat5Server" should-backup="true" state="REDEPLOY" status="Deployment is out of date due to changes in the underlying project contents. You'll need to manually 'Redeploy' the project to update the deployed archive." type="WEB"/>
+</deployments>

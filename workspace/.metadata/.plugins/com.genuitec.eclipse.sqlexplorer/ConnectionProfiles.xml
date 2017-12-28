@@ -1,0 +1,50 @@
+<Beans>
+    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
+        <activate>false</activate>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-4cedeb4a:13da6516ad5:-7f6e</string>
+        </driverIdentifier>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-4f392728:14c1396129d:-7fda</string>
+        </identifier>
+        <name>oracle</name>
+        <password encryption="true"/>
+        <promptForPassword>true</promptForPassword>
+        <schema Indexed="true"/>
+        <schemaDisplayPolicy>0</schemaDisplayPolicy>
+        <url>jdbc:oracle:thin:@localhost:1521:song</url>
+        <userName>system</userName>
+    </Bean>
+    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
+        <activate>false</activate>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-56f3e5a5:14c13952f4a:-7fde</string>
+        </driverIdentifier>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-56f3e5a5:14c13952f4a:-7fdd</string>
+        </identifier>
+        <name>MyEclipse Derby</name>
+        <password encryption="true">gFOjO/OmrJ8m4/rtM2cMIw==</password>
+        <promptForPassword>false</promptForPassword>
+        <schema Indexed="true"/>
+        <schemaDisplayPolicy>0</schemaDisplayPolicy>
+        <url>jdbc:derby://localhost:1527/myeclipse</url>
+        <userName>classiccars</userName>
+    </Bean>
+    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
+        <activate>false</activate>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-4cedeb4a:13da6516ad5:-7f6e</string>
+        </driverIdentifier>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-4cedeb4a:13da6516ad5:-7f91</string>
+        </identifier>
+        <name>oracle.jdbc.driver.OracleDriver</name>
+        <password encryption="true"/>
+        <promptForPassword>true</promptForPassword>
+        <schema Indexed="true"/>
+        <schemaDisplayPolicy>0</schemaDisplayPolicy>
+        <url>jdbc:oracle:thin:@192.168.0.204:1521:tarena</url>
+        <userName>jsd1310</userName>
+    </Bean>
+</Beans>

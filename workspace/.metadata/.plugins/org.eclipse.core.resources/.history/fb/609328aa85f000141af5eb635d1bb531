@@ -1,0 +1,34 @@
+package com.netctoss.action.account;
+
+import com.netctoss.pojo.Account;
+
+public class ToUpdateAccountAction {
+	
+	//输入属性:
+	private Integer id;
+	
+	//输出属性:
+	private Account account;
+	
+	public String execute(){
+		
+		return "success";
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+	
+}

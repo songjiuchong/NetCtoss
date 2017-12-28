@@ -1,0 +1,263 @@
+body
+{
+	padding:0px;
+	margin:0px;
+	background-image:url(images/body_bg.png);
+	background-repeat:repeat-x;
+	/*文本的定义*/
+	color:white;
+	font-size:10pt;
+	font-family:times;
+}
+div
+{
+	/*border:1px solid black;*/
+	margin:0px auto;
+}
+
+/*分别定义;*/
+#header,#footer
+{ 
+width:960px; 
+}
+#operater,#dataList,#pages
+{
+width:910px;
+}
+
+#header
+{
+	height:61px;
+	background-image:url(images/top_bg.png);
+	background-repeat:no-repeat;
+	text-align:right;
+}
+#navi
+{
+	width:100%;
+	height:91px;
+	background-image:url(images/navigation.png);
+	background-repeat:repeat-x;
+}
+#main
+{
+	width:950px;
+	height:410px;
+	border:5px solid #8ac1db;
+	background-color:#e3f3f8;
+	position:relative;
+}
+#footer
+{
+	height:50px;
+}
+#operater
+{
+	height:30px;
+}
+#dataList
+{
+	height:340px;
+}
+#pages
+{
+	height:28px;
+}
+#page
+{
+	list-style-type:none;
+	width:300px;
+	margin:0px auto;
+}
+#results
+{
+	width:400px;
+	height:70px;
+	background-color:#fdecec;
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+	position:absolute;
+	top:100px;
+	left:300px;
+}
+div.success
+{
+	border:1px solid #f57676;
+	background-image:url(images/ok.png);
+	color:#af6606;
+}
+div.fail
+{
+	border:1px solid red;
+	background-image:url(images/warning.png);
+	color:red;
+}
+#results span
+{
+	line-height:70px;
+	margin-left:40px;
+}
+#results img
+{
+	float:right;
+	margin-top:5px;
+	margin-right:5px;
+}
+#header a
+{
+	color:white;
+	text-decoration:none;
+	line-height:61px;
+	font-size:10pt;
+	margin-right:40px;
+}
+#header a:hover
+{
+	font-weight:bold;
+	text-decoration:underline;
+}
+#footer p
+{
+	margin:0px;
+	padding:0px;
+	text-align:center;
+	line-height:25px;
+}
+#dataTable
+{
+	width:910px;
+	background-color:white;
+	color:black;
+    	text-align:center;
+   	border:1px solid #ccc;
+    	border-collapse:collapse;
+}
+#dataTable td
+{
+	border:1px solid #ccc;
+	height:32px;
+}
+tr.tableHeader,#dataTable tr.tableHeader:hover
+{
+	background-color:#fbedce;
+	font-weight:bold;
+	height:40px;
+}
+#dataTable tr:hover
+{
+	background-color:#f7f9fd;
+}
+/*为操作按钮定义样式*/
+input.btnModify,input.btnDelete
+{
+	background-repeat:no-repeat;
+	width:60px;
+	background-color:white;
+	border:0;
+	background-position:0px 50%;
+}
+input.btnModify
+{
+	background-image:url(images/modification.png);
+}
+input.btnDelete
+{	
+	background-image:url(images/delete.png);
+}
+#header img
+{
+	float:left;
+}
+/*导航菜单*/
+#menu
+{
+	width:960px;
+	list-style-type:none;
+	margin:0px auto;
+}
+#menu li
+{
+	float:left;	
+	margin:2px 14px;
+}
+#page li
+{
+	float:left;
+	margin:1px 2px;
+}
+#page li a
+{
+	display:block;
+	height:25px;
+	text-align:center;
+	line-height:25px;
+	text-decoration:none;
+	color:#000;
+
+}
+#page a:hover
+{
+	border:1px solid #89bdd8;
+	color:#067db5;
+	background-color:#FFF;
+}
+#menu li a
+{	
+	display:block;
+	background-repeat:no-repeat;
+	width:68px;
+	height:77px;
+}
+a.index
+{
+	background-image:url(images/index_out.png);
+}
+a.role
+{
+	background-image:url(images/role_out.png);
+}
+a.admin
+{
+	background-image:url(images/admin_out.png);
+}
+a.fee
+{
+	background-image:url(images/fee_out.png);
+}
+a.account
+{
+	background-image:url(images/account_out.png);
+}
+a.service
+{
+	background-image:url(images/service_out.png);
+}
+a.account
+{
+	background-image:url(images/account_out.png);
+}
+a.bill
+{
+	background-image:url(images/bill_out.png);
+}
+a.report
+{
+	background-image:url(images/report_out.png);
+}
+a.information
+{
+	background-image:url(images/information_out.png);
+}
+a.password
+{
+	background-image:url(images/password_out.png);
+}
+a.prenextpages
+{
+	width:55px;
+
+}
+a.middlepages
+{
+	width:25px;
+}

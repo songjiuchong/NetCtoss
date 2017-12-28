@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+	
+	<!--管理员模块admin-->
+	<package name="admin" namespace="/admin" extends="netctoss">
+		
+		<!--查询管理员的Action-->
+		<action name="findAdmin" class="com.netctoss.action.admin.FindAdminAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<param name="pageSize">3</param>
+			<result name="success">
+				/WEB-INF/admin/findAdmin.jsp
+			</result>
+		</action>
+		
+		<!--重置管理员密码的Action-->
+		<action name="resetPassword" class="com.netctoss.action.admin.ResetPasswordAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+		<!--跳转到新增管理员页面的Action-->
+		<action name="toAddAdmin" class="com.netctoss.action.admin.ToAddAdminAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/admin/addAdmin.jsp
+			</result>
+		</action>
+		
+		<!--新增管理员保存的Action-->
+		<action name="addAdmin" class="com.netctoss.action.admin.AddAdminAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findAdmin
+			</result>
+		</action>
+		
+		<!--跳转到修改管理员信息页面的Action-->
+		<action name="toUpdateAdmin" class="com.netctoss.action.admin.ToUpdateAdminAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success">
+				/WEB-INF/admin/updateAdmin.jsp
+			</result>
+		</action>
+		
+		<!--修改管理员信息页面的Action-->
+		<action name="updateAdmin" class="com.netctoss.action.admin.UpdateAdminAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="redirectAction">
+				findAdmin
+			</result>
+		</action>
+		
+		<!--删除管理员的Action-->
+		<action name="deleteAdmin" class="com.netctoss.action.admin.DeleteAdminAction">
+			<!--引用拦截器栈-->
+			<interceptor-ref name="loginStack"></interceptor-ref>
+			<result name="success" type="json">
+				<param name="root">pass</param>
+			</result>
+		</action>
+		
+	</package>
+	
+</struts>
+
+

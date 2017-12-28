@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+    
+<struts>
+
+	<!--为整个项目定义一个公共的package,其中的内容是整个项目的其它包都能使用的,只需继承此包即可-->
+	<package name="netctoss" extends="json-default">
+		
+		<!-- 通用的拦截器 -->
+		<interceptors>
+			<!--自定义拦截器,用于登录检查-->
+			<interceptor name="loginInterceptor" class="com.netctoss.interceptor.LoginInterceptor">
+			</interceptor>
+			<!-- 自定义拦截器,用于关闭HibernateDao中的Session -->
+			<interceptor name="openSessionInViewInterceptor" class="com.netctoss.interceptor.OpenSessionInViewInterceptor">
+			</interceptor>
+			<!--注册拦截器栈,包含登录检查拦截器,和Struts2默认的拦截器;
+			这里将defaultStack引入的原因是当用户自定义或者单独引用了一个拦截器,那本来默认会调用的拦截器将
+			不再被默认使用,需要重新引用,而defaultStack拦截器栈包含了对参数注入等基本的功能的实现-->
+			<interceptor-stack name="loginStack">
+				<interceptor-ref name="loginInterceptor">
+				</interceptor-ref>
+				<interceptor-ref name="openSessionInViewInterceptor">
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack">
+				</interceptor-ref>				
+			</interceptor-stack>
+		</interceptors>
+
+		<!--通用的Result,当前包下的Action都能使用 -->
+		<global-results>
+			<result name="login" type="redirectAction">
+				<!--由于toLogin在login的package中,所以此处需要指定另一个路径给前段控制器-->
+				<param name="namespace">/login</param>
+				<param name="actionName">toLogin</param>
+			</result>
+			<result name="error">
+				/WEB-INF/main/error.jsp
+			</result>
+		</global-results>
+		
+		
+		<!--注意一:
+		有些/cost下的页面发生了问题需要跳转到login.jsp,不能用默认的转发,而是需要global-results中那样定义的重定向"login",
+		原因是在login.jsp页面中有用相对路径访问的多条语句,如:img src="validateCode.action",而转发时浏览器的地址是不变的,所以相当用
+		当前/cost的地址去请求login.jsp,那么那些相对地址的请求当然都无效了,所以在用转发访问.jsp文件时需要注意当前路径-->
+		
+		<!--注意二:
+		如果用默认的转发格式的result去访问一个action,那么前端控制器就会直接在工程名后把所给地址加在最后然后直接访问,这样当然找不到能够
+		返回的页面,所以报400错误;
+		
+		如果用redirectAction去访问一个.jsp,则会报错在指定的namespace中无法找到这个action,显然前端控制器会直接在访问路径的相对地址中将所给
+		地址加在最后然后在struts.xml中查找action;
+		
+		而如果用redirect去访问一个.jsp,则前端控制器会直接在工程名后把所给地址加在最后然后直接访问,显然由于WEB-INF的隐藏特性无法访问;-->
+	
+	</package>
+	
+	
+	<!--引入登录模块login-->
+	<include file="struts-login.xml"></include>
+	
+	<!--引入资费模块cost-->
+	<include file="struts-cost.xml"></include>
+	
+	<!--引入账务账号模块account-->
+	<include file="struts-account.xml"></include>
+	
+	<!--引入业务账号模块service-->
+	<include file="struts-service.xml"></include>	
+	
+	<!--引入角色管理模块role-->
+	<include file="struts-role.xml"></include>	
+	
+	<!--引入管理员模块admin-->
+	<include file="struts-admin.xml"></include>	
+	
+</struts>
+
+

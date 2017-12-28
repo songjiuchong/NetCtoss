@@ -1,0 +1,48 @@
+package com.netctoss.action.account;
+
+import com.netctoss.dao.DAOException;
+import com.netctoss.dao.DAOFactory;
+import com.netctoss.dao.account.IAccountDao;
+import com.netctoss.pojo.Account;
+
+public class UpdateAccountRidValidate {
+	
+	//输入属性;
+	private String recommenderIdCardNo;
+	
+	//输出属性;
+	private boolean pass;
+	
+	public String execute(){
+		IAccountDao dao = DAOFactory.getIAccountDao();
+		try {
+			Account account = dao.findAccountByIdCardNo(recommenderIdCardNo);
+			if(account==null){
+				pass = false;
+			}else{
+				pass=true;
+			}
+		} catch (DAOException e) {
+			e.printStackTrace();
+			pass=false;
+		}
+		return "success";
+	}
+
+	public String getRecommenderIdCardNo() {
+		return recommenderIdCardNo;
+	}
+
+	public void setRecommenderIdCardNo(String recommenderIdCardNo) {
+		this.recommenderIdCardNo = recommenderIdCardNo;
+	}
+
+	public boolean isPass() {
+		return pass;
+	}
+
+	public void setPass(boolean pass) {
+		this.pass = pass;
+	}
+	
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre" version="1.6.0_13">
+<bootpath>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013" version="1.6.0_13">
+<bootpath>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013" version="1.6.0_13">
+<bootpath>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\MyEclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013" version="1.6.0_13">
+<bootpath>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Users\song\AppData\Local\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013" version="1.6.0_13">
+<bootpath>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\myeclipse\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre" version="1.6.0_13">
+<bootpath>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre" version="1.6.0_13">
+<bootpath>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Genuitec\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013" version="1.6.0_13">
+<bootpath>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\resources.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\rt.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\sunrsasign.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jsse.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\jce.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\charsets.jar"/>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="F:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_1.6.0.013\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

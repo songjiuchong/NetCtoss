@@ -1,0 +1,194 @@
+package com.netctoss.dao.account;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Set;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.netctoss.dao.DAOException;
+import com.netctoss.dao.DAOFactory;
+import com.netctoss.pojo.Account;
+import com.netctoss.pojo.Service;
+import com.netctoss.util.HibernateUtil;
+
+public class HibernateAccountDao implements IAccountDao{
+	
+	//根据Account对象为数据库添加一条账务账号数据;
+	public void addAccount(Account account) throws DAOException {
+		if(account==null){
+			return;
+		}
+		Session session = HibernateUtil.getSession();
+		Transaction ts = session.beginTransaction();
+		session.save(account);
+		ts.commit();
+	}
+	
+	//根据id,更新此数据的状态为2,同时将删除日期设置为系统时间;
+	public void deleteAccount(int id) throws DAOException {
+		Session session = HibernateUtil.getSession();
+		Transaction ts = session.beginTransaction();
+		Account account = (Account)session.load(Account.class,id);
+		account.setStatus("2");
+		account.setCloseDate(new Date());
+		session.update(account);
+		ts.commit();
+	}
+	
+	//根据accountId(也就是ACCOUNT表中的ID)来查找Account对象;
+	public Account findAccountById(Integer accountId) throws DAOException {
+		Session session = null;
+		try{
+			session = HibernateUtil.getSession();
+			Account account = (Account)session.load(Account.class, accountId);
+			return account;
+		}catch(Exception e){
+			e.printStackTrace();
+			throw new DAOException("根据ID查询Account对象失败！",e);
+		}
+	}
+	
+	//根据身份证查询对应的账务账号;
+	public Account findAccountByIdCardNo(String idcardNo) throws DAOException {
+		if(idcardNo == null)
+			return null;
+		String hql = "from Account where idcardNo=? ";
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(hql);
+		query.setString(0,idcardNo);
+		Account account = (Account)query.uniqueResult();
+		return account;
+	}
+	
+	//根据账务账号名查找一条记录;
+	public Account findByAccountName(String accountName) throws DAOException {
+		String hql = "from Account where loginName=? ";
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(hql);
+		query.setString(0, accountName);
+		Account account = (Account)query.uniqueResult();
+		return account;
+	}
+	
+	//根据所给查询条件查询账务账号;
+	public List<Account> findByCondition(String idcardNo, String realName,
+			String loginName, String status, int page, int pageSize)
+			throws DAOException {
+		
+		List<Object> params = new ArrayList<Object>();
+		StringBuffer sb = new StringBuffer("from Account where 1=1 ");
+		if(idcardNo!=null && idcardNo.length()>0){
+			sb.append("and idcardNo=? ");
+			params.add(idcardNo);
+		}
+		if(realName!=null && realName.length()>0){
+			sb.append("and realName=? ");
+			params.add(realName);
+		}
+		if(loginName!=null && loginName.length()>0){
+			sb.append("and loginName=? ");
+			params.add(loginName);
+		}
+		if(status!=null && !status.equals("-1")){
+			sb.append("and status=? ");
+			params.add(status);
+		}
+		//分页执行上述HQL;
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(sb.toString());
+		query.setFirstResult((page-1)*pageSize);
+		query.setMaxResults(pageSize);
+		//设置参数;
+		for(int i=0;i<params.size();i++){
+			query.setParameter(i, params.get(i));
+		}
+		//执行;
+		List<Account> list = query.list();
+		return list;
+	}
+	
+	//根据页容量查询所有数据一共可以分为几页,返回总页数;
+	public int findTotalPage(String idcardNo, String realName,
+			String loginName, String status, int pageSize) throws DAOException {
+		//构造查询的SQL;
+		List<Object> params = new ArrayList<Object>();
+		String hql = createFindTotalPageSQL(idcardNo,realName,loginName,status,params);
+		Session session = HibernateUtil.getSession();
+		Query query = session.createQuery(hql);
+		for(int i=0;i<params.size();i++){
+			query.setParameter(i,params.get(i));
+		}
+		//执行;
+		Long size = (Long)query.uniqueResult();
+		if(size%pageSize==0){
+			return size.intValue()/pageSize;
+		}else{
+			return size.intValue()/pageSize+1;
+		}
+	}
+	
+	//根据所给的查询条件构造查找总页数的SQL查询语句;
+	private String createFindTotalPageSQL(String idcardNo, String realName,
+			String loginName,String status,List<Object> params){
+		
+		StringBuffer sb = new StringBuffer();
+		sb.append("select count(*) from Account a where 1=1 ");
+		if(idcardNo!=null && idcardNo.length()>0){
+			sb.append("and idcardNo=? ");
+			params.add(idcardNo);
+		}
+		if(realName!=null && realName.length()>0){
+			sb.append("and realName=? ");
+			params.add(realName);
+		}
+		if(loginName!=null && loginName.length()>0){
+			sb.append("and loginName=? ");
+			params.add(loginName);
+		}
+		if(status!=null && !status.equals("-1")){
+			sb.append("and status=? ");
+			params.add(status);
+		}
+		return sb.toString();
+	}
+	
+	//根据id,更新此数据的状态为1,同时将暂停日期设置为系统时间;
+	public void pauseAccount(int id) throws DAOException {
+		String hql = "update Account set status=1,pauseDate=? where id=? ";
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		Query query = session.createQuery(hql);
+		query.setString(0,"1");
+		query.setDate(0,new Date());
+		query.setInteger(1,id);
+		query.executeUpdate();
+		tx.commit();
+	}
+	
+	//根据id,更新此数据的状态为0,同时将暂停日期的字段的值清空;
+	public void startAccount(int id) throws DAOException {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		Account account = (Account)session.load(Account.class, id);
+		Date date = account.getPauseDate();
+		account.setStatus("0");
+		account.setPauseDate(date);
+		session.update(account);
+		tx.commit();
+	}
+	
+	//测试:
+	public static void main(String [] args){
+		IAccountDao dao = DAOFactory.getIAccountDao();
+		try {
+			dao.startAccount(1015);
+		} catch (DAOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

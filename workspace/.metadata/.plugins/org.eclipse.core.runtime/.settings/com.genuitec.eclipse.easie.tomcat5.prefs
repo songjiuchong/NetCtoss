@@ -1,0 +1,10 @@
+#Sat Mar 14 22:16:00 CST 2015
+TOMCAT_HOME=F\:\\alternative lab\\tomcat\\apache-tomcat-5.5.23
+TOMCAT_TEMP=F\:\\alternative lab\\tomcat\\apache-tomcat-5.5.23\\temp
+LIBRARY_PATH="F\:\\myeclipse\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013\\bin;F\:\\alternative lab\\tomcat\\apache-tomcat-5.5.23\\bin"
+OPT_PROGRAM_ARGS=-Dfile.encoding\=GBK
+TOMCAT_BASE=F\:\\alternative lab\\tomcat\\apache-tomcat-5.5.23
+ENDORSED_DIRS="F\:\\alternative lab\\tomcat\\apache-tomcat-5.5.23/common/endorsed"
+eclipse.preferences.version=1
+JDK_HOME=F\:\\myeclipse\\Common\\binary\\com.sun.java.jdk.win32.x86_1.6.0.013
+SERVER_ENABLEMENT=true

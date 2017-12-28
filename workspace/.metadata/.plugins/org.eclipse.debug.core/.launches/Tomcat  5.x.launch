@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.genuitec.eclipse.wdt.jsp.debug.localServer">
+<booleanAttribute key="IS_LAUNCH_CONFIG_SERVER_TYPE" value="true"/>
+<stringAttribute key="LAUNCH_IS_TEMPORARY" value="false"/>
+<stringAttribute key="SERVER_BUNDLE_NAME_ATTR" value="com.genuitec.eclipse.easie.tomcat5"/>
+<stringAttribute key="SERVER_CLASS_NAME_ATTR" value="com.genuitec.eclipse.easie.tomcat5.Tomcat5"/>
+<stringAttribute key="SERVER_DEPLOY_BASE_DIR_ATTR" value="F:/alternative lab/tomcat/apache-tomcat-5.5.23"/>
+<stringAttribute key="SERVER_ICON_PATH" value="platform:/plugin/com.genuitec.eclipse.easie.tomcat_8.5.0.me201003190322/icons/tomcat_logo.gif"/>
+<stringAttribute key="SERVER_TYPE_ID" value="Tomcat  5:x"/>
+<stringAttribute key="SERVER_TYPE_NAME" value="Tomcat  5.x"/>
+<listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;F:/alternative lab/tomcat/apache-tomcat-5.5.23/bin/bootstrap.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry externalArchive=&quot;F:/myeclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/lib/tools.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;&#13;&#10;"/>
+<listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/com.sun.java.jdk.win32.x86_1.6.0.013&quot; path=&quot;1&quot; type=&quot;4&quot;/&gt;&#13;&#10;"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.apache.catalina.startup.Bootstrap"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-Dfile.encoding=GBK start"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dcatalina.home=F:&quot;/alternative lab/tomcat/apache-tomcat-5.5.23&quot; -Dcatalina.base=F:&quot;/alternative lab/tomcat/apache-tomcat-5.5.23&quot; -Djava.endorsed.dirs=F:&quot;/alternative lab/tomcat/apache-tomcat-5.5.23/common/endorsed&quot; -Djava.io.tmpdir=F:&quot;/alternative lab/tomcat/apache-tomcat-5.5.23/temp&quot; -Djava.library.path=F:&quot;/myeclipse/Common/binary/com.sun.java.jdk.win32.x86_1.6.0.013/bin;F:/alternative lab/tomcat/apache-tomcat-5.5.23/bin&quot; -Dsun.io.useCanonCaches=false"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_INSTALL_NAME" value="com.sun.java.jdk.win32.x86_1.6.0.013"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_INSTALL_TYPE_ID" value="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="F:/alternative lab/tomcat/apache-tomcat-5.5.23/bin"/>
+</launchConfiguration>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="netctoss" location="0,0" size="0,0" />
+  <webResource name="findCost.jsp" path="/WEB-INF/cost/findCost.jsp" location="56,205" size="150,55" />
+  <webResource name="error.jsp" path="/WEB-INF/cost/error.jsp" location="345,30" size="150,55" />
+  <webResource name="login.jsp" path="/WEB-INF/main/login.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/WEB-INF/main/index.jsp" location="0,0" size="0,0" />
+  <include file="struts-login.xml" location="0,0" size="0,0" />
+  <include file="struts-cost.xml" location="0,0" size="0,0" />
+  <include file="struts-account.xml" location="0,0" size="0,0" />
+  <include file="struts-service.xml" location="0,0" size="0,0" />
+</Struts2Diagram>
+

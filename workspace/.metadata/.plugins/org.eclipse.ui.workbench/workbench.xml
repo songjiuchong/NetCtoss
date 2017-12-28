@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="57" version="2.0">
+<workbenchAdvisor/>
+<window height="780" width="927" x="69" y="16">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.genuitec.eclipse.j2eedt.core.ejb" itemType="typeToolBarContribution" x="52" y="22"/>
+<coolItem id="com.genuitec.eclipse.uml.actions" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="com.genuitec.eclipse.web20.actionset" itemType="typeToolBarContribution" x="39" y="22"/>
+<coolItem id="com.genuitec.eclipse.ws.xfire.actions" itemType="typeToolBarContribution" x="88" y="22"/>
+<coolItem id="com.genuitec.myeclipse.actions.deploytools" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="com.genuitec.myeclipse.actions.desktop" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="com.genuitec.myeclipse.actions.reporting" itemType="typeToolBarContribution" x="75" y="22"/>
+<coolItem id="com.genuitec.myeclipse.actions.screencapture" itemType="typeToolBarContribution" x="55" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="205" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="108" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="116" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="183" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.springframework.springconfigeditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.wst.dtd.core.dtdsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.struts2.editor" itemType="typeToolBarContribution" x="346" y="22"/>
+<coolItem id="com.genuitec.eclipse.j2eedt.core.editor.tld" itemType="typeToolBarContribution" x="37" y="22"/>
+<coolItem id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" itemType="typeToolBarContribution" x="39" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.genuitec.eclipse.webdesigner3.editors.jsp" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.jboss.tools.common.model.ui.editor.EditorPartWrapper" itemType="typePlaceholder" x="38" y="22"/>
+<coolItem id="com.genuitec.eclipse.sqlexplorer.editors.SQLEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1426257682561" focus="true" label="Workspace - MyEclipse Java Enterprise">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
+<part id="32"/>
+<part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
+<part id="38"/>
+<part id="39"/>
+<part id="40"/>
+<part id="41"/>
+<part id="42"/>
+<part id="43"/>
+<part id="44"/>
+<part id="45"/>
+<part id="46"/>
+<part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+<part id="52"/>
+<part id="53"/>
+<part id="54"/>
+<part id="55"/>
+<part id="56"/>
+<part id="57"/>
+<part id="58"/>
+<part id="59"/>
+<part id="60"/>
+<part id="61"/>
+<part id="62"/>
+<part id="63"/>
+<part id="64"/>
+<part id="65"/>
+<part id="66"/>
+<part id="67"/>
+<part id="68"/>
+<part id="69"/>
+<part id="70"/>
+<part id="71"/>
+<part id="72"/>
+<part id="73"/>
+<part id="74"/>
+<part id="75"/>
+<part id="76"/>
+<part id="77"/>
+<part id="78"/>
+<part id="79"/>
+<part id="80"/>
+<part id="81"/>
+<part id="82"/>
+<part id="83"/>
+<part id="84"/>
+<part id="85"/>
+<part id="86"/>
+<part id="87"/>
+<part id="88"/>
+<part id="89"/>
+<part id="90"/>
+<part id="91"/>
+<part id="92"/>
+<part id="93"/>
+<part id="94"/>
+<part id="95"/>
+<part id="96"/>
+<part id="97"/>
+<part id="98"/>
+<part id="99"/>
+<part id="100"/>
+<part id="101"/>
+<part id="102"/>
+<part id="103"/>
+<part id="104"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindCostAction.java" partName="FindCostAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/cost/FindCostAction.java" title="FindCostAction.java" tooltip="NetCtoss/src/com/netctoss/action/cost/FindCostAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/cost/FindCostAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1096" selectionTopPixel="459"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CostDaoImpl.java" partName="CostDaoImpl.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/cost/CostDaoImpl.java" title="CostDaoImpl.java" tooltip="NetCtoss/src/com/netctoss/dao/cost/CostDaoImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/cost/CostDaoImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5012" selectionTopPixel="2622"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginValidateAction.java" partName="LoginValidateAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/login/LoginValidateAction.java" title="LoginValidateAction.java" tooltip="NetCtoss/src/com/netctoss/action/login/LoginValidateAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/login/LoginValidateAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="672" selectionTopPixel="51"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AdminDaoImpl.java" partName="AdminDaoImpl.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/login/AdminDaoImpl.java" title="AdminDaoImpl.java" tooltip="NetCtoss/src/com/netctoss/dao/login/AdminDaoImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/login/AdminDaoImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1138" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StartAccountAction.java" partName="StartAccountAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/StartAccountAction.java" title="StartAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/StartAccountAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/StartAccountAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="602" selectionTopPixel="109"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteAccountAction.java" partName="DeleteAccountAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/DeleteAccountAction.java" title="DeleteAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/DeleteAccountAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/DeleteAccountAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1131" selectionTopPixel="334"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddCostAction.java" partName="AddCostAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/cost/AddCostAction.java" title="AddCostAction.java" tooltip="NetCtoss/src/com/netctoss/action/cost/AddCostAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/cost/AddCostAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="429" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="addCost.jsp" partName="addCost.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/cost/addCost.jsp" title="addCost.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/cost/addCost.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/cost/addCost.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICostDao.java" partName="ICostDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/cost/ICostDao.java" title="ICostDao.java" tooltip="NetCtoss/src/com/netctoss/dao/cost/ICostDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/cost/ICostDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="738" selectionTopPixel="25"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddCostValidateAction.java" partName="AddCostValidateAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/cost/AddCostValidateAction.java" title="AddCostValidateAction.java" tooltip="NetCtoss/src/com/netctoss/action/cost/AddCostValidateAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/cost/AddCostValidateAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="777" selectionTopPixel="302"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Service.java" partName="Service.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Service.java" title="Service.java" tooltip="NetCtoss/src/com/netctoss/pojo/Service.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Service.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="488" selectionTopPixel="17"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServiceVo.java" partName="ServiceVo.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/vo/ServiceVo.java" title="ServiceVo.java" tooltip="NetCtoss/src/com/netctoss/vo/ServiceVo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/vo/ServiceVo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="287" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IServiceDao.java" partName="IServiceDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/service/IServiceDao.java" title="IServiceDao.java" tooltip="NetCtoss/src/com/netctoss/dao/service/IServiceDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/service/IServiceDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="998" selectionTopPixel="178"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PauseServiceAction.java" partName="PauseServiceAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/service/PauseServiceAction.java" title="PauseServiceAction.java" tooltip="NetCtoss/src/com/netctoss/action/service/PauseServiceAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/service/PauseServiceAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="451" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteServiceAction.java" partName="DeleteServiceAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/service/DeleteServiceAction.java" title="DeleteServiceAction.java" tooltip="NetCtoss/src/com/netctoss/action/service/DeleteServiceAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/service/DeleteServiceAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="441" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="updateCost.jsp" partName="updateCost.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/cost/updateCost.jsp" title="updateCost.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/cost/updateCost.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/cost/updateCost.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DAOException.java" partName="DAOException.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/DAOException.java" title="DAOException.java" tooltip="NetCtoss/src/com/netctoss/dao/DAOException.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/DAOException.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DBUtil.java" partName="DBUtil.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/util/DBUtil.java" title="DBUtil.java" tooltip="NetCtoss/src/com/netctoss/util/DBUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/util/DBUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1228" selectionTopPixel="84"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Privilege.java" partName="Privilege.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Privilege.java" title="Privilege.java" tooltip="NetCtoss/src/com/netctoss/pojo/Privilege.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Privilege.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="371" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToAddRoleAction.java" partName="ToAddRoleAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/ToAddRoleAction.java" title="ToAddRoleAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/ToAddRoleAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/ToAddRoleAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="367" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddRoleAction.java" partName="AddRoleAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/AddRoleAction.java" title="AddRoleAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/AddRoleAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/AddRoleAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="481" selectionTopPixel="46"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRoleDao.java" partName="IRoleDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/role/IRoleDao.java" title="IRoleDao.java" tooltip="NetCtoss/src/com/netctoss/dao/role/IRoleDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/role/IRoleDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="772" selectionTopPixel="145"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DAOFactory.java" partName="DAOFactory.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/DAOFactory.java" title="DAOFactory.java" tooltip="NetCtoss/src/com/netctoss/dao/DAOFactory.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/DAOFactory.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1207" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToUpdateRoleAction.java" partName="ToUpdateRoleAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/ToUpdateRoleAction.java" title="ToUpdateRoleAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/ToUpdateRoleAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/ToUpdateRoleAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="428" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateRoleAction.java" partName="UpdateRoleAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/UpdateRoleAction.java" title="UpdateRoleAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/UpdateRoleAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/UpdateRoleAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="535" selectionTopPixel="24"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RoleVo.java" partName="RoleVo.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/vo/RoleVo.java" title="RoleVo.java" tooltip="NetCtoss/src/com/netctoss/vo/RoleVo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/vo/RoleVo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="406" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PrivilegeReader.java" partName="PrivilegeReader.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/util/PrivilegeReader.java" title="PrivilegeReader.java" tooltip="NetCtoss/src/com/netctoss/util/PrivilegeReader.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/util/PrivilegeReader.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="412" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteRoleAction.java" partName="DeleteRoleAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/DeleteRoleAction.java" title="DeleteRoleAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/DeleteRoleAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/DeleteRoleAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="260" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="findAccount.jsp" partName="findAccount.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/account/findAccount.jsp" title="findAccount.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/account/findAccount.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/account/findAccount.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RoleDaoImpl.java" partName="RoleDaoImpl.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/role/RoleDaoImpl.java" title="RoleDaoImpl.java" tooltip="NetCtoss/src/com/netctoss/dao/role/RoleDaoImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/role/RoleDaoImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2974" selectionTopPixel="2829"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindRoleAction.java" partName="FindRoleAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/FindRoleAction.java" title="FindRoleAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/FindRoleAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/FindRoleAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="674" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateRoleValidateAction.java" partName="UpdateRoleValidateAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/role/UpdateRoleValidateAction.java" title="UpdateRoleValidateAction.java" tooltip="NetCtoss/src/com/netctoss/action/role/UpdateRoleValidateAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/role/UpdateRoleValidateAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="599" selectionTopPixel="51"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="addRole.jsp" partName="addRole.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/role/addRole.jsp" title="addRole.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/role/addRole.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/role/addRole.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToAccountDetailAction.java" partName="ToAccountDetailAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/ToAccountDetailAction.java" title="ToAccountDetailAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/ToAccountDetailAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/ToAccountDetailAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="473" selectionTopPixel="245"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="accountDetail.jsp" partName="accountDetail.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/account/accountDetail.jsp" title="accountDetail.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/account/accountDetail.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/account/accountDetail.jsp"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="serviceDetail.jsp" partName="serviceDetail.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/service/serviceDetail.jsp" title="serviceDetail.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/service/serviceDetail.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/service/serviceDetail.jsp"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts-account.xml" partName="struts-account.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts-account.xml" title="struts-account.xml" tooltip="NetCtoss/src/struts-account.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts-account.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AccountDaoImpl.java" partName="AccountDaoImpl.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/account/AccountDaoImpl.java" title="AccountDaoImpl.java" tooltip="NetCtoss/src/com/netctoss/dao/account/AccountDaoImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/account/AccountDaoImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10618" selectionTopPixel="4737"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="updateService.jsp" partName="updateService.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/service/updateService.jsp" title="updateService.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/service/updateService.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/service/updateService.jsp"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="addService.jsp" partName="addService.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/service/addService.jsp" title="addService.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/service/addService.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/service/addService.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateCostAction.java" partName="UpdateCostAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/cost/UpdateCostAction.java" title="UpdateCostAction.java" tooltip="NetCtoss/src/com/netctoss/action/cost/UpdateCostAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/cost/UpdateCostAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateCostValidateAction.java" partName="UpdateCostValidateAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/cost/UpdateCostValidateAction.java" title="UpdateCostValidateAction.java" tooltip="NetCtoss/src/com/netctoss/action/cost/UpdateCostValidateAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/cost/UpdateCostValidateAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindAdminAction.java" partName="FindAdminAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/FindAdminAction.java" title="FindAdminAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/FindAdminAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/FindAdminAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1533" selectionTopPixel="816"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IAdminDao.java" partName="IAdminDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/login/IAdminDao.java" title="IAdminDao.java" tooltip="NetCtoss/src/com/netctoss/dao/login/IAdminDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/login/IAdminDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="912" selectionTopPixel="204"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ServiceDaoImpl.java" partName="ServiceDaoImpl.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/service/ServiceDaoImpl.java" title="ServiceDaoImpl.java" tooltip="NetCtoss/src/com/netctoss/dao/service/ServiceDaoImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/service/ServiceDaoImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="10075" selectionTopPixel="5413"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="findAdmin.jsp" partName="findAdmin.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/admin/findAdmin.jsp" title="findAdmin.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/admin/findAdmin.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/admin/findAdmin.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Role.java" partName="Role.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Role.java" title="Role.java" tooltip="NetCtoss/src/com/netctoss/pojo/Role.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Role.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1513" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Account.java" partName="Account.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Account.java" title="Account.java" tooltip="NetCtoss/src/com/netctoss/pojo/Account.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Account.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="282" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ResetPasswordAction.java" partName="ResetPasswordAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/ResetPasswordAction.java" title="ResetPasswordAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/ResetPasswordAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/ResetPasswordAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="550" selectionTopPixel="29"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Admin.java" partName="Admin.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Admin.java" title="Admin.java" tooltip="NetCtoss/src/com/netctoss/pojo/Admin.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Admin.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="576" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindServiceAction.java" partName="FindServiceAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/service/FindServiceAction.java" title="FindServiceAction.java" tooltip="NetCtoss/src/com/netctoss/action/service/FindServiceAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/service/FindServiceAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="538" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts-admin.xml" partName="struts-admin.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts-admin.xml" title="struts-admin.xml" tooltip="NetCtoss/src/struts-admin.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts-admin.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToAddAdminAction.java" partName="ToAddAdminAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/ToAddAdminAction.java" title="ToAddAdminAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/ToAddAdminAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/ToAddAdminAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="545" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="addAdmin.jsp" partName="addAdmin.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/admin/addAdmin.jsp" title="addAdmin.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/admin/addAdmin.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/admin/addAdmin.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddAdminAction.java" partName="AddAdminAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/AddAdminAction.java" title="AddAdminAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/AddAdminAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/AddAdminAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="466" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginAction.java" partName="LoginAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/login/LoginAction.java" title="LoginAction.java" tooltip="NetCtoss/src/com/netctoss/action/login/LoginAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/login/LoginAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2528" selectionTopPixel="969"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="index.jsp" partName="index.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/main/index.jsp" title="index.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/main/index.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/main/index.jsp"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="updateAdmin.jsp" partName="updateAdmin.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/admin/updateAdmin.jsp" title="updateAdmin.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/admin/updateAdmin.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/admin/updateAdmin.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToUpdateAdminAction.java" partName="ToUpdateAdminAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/ToUpdateAdminAction.java" title="ToUpdateAdminAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/ToUpdateAdminAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/ToUpdateAdminAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="783" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAdminAction.java" partName="UpdateAdminAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/UpdateAdminAction.java" title="UpdateAdminAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/UpdateAdminAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/UpdateAdminAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="449" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="com.genuitec.eclipse.struts2.editor" name="struts-role.xml" partName="struts-role.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts-role.xml" title="struts-role.xml" tooltip="NetCtoss/src/struts-role.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts-role.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteAdminAction.java" partName="DeleteAdminAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/admin/DeleteAdminAction.java" title="DeleteAdminAction.java" tooltip="NetCtoss/src/com/netctoss/action/admin/DeleteAdminAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/admin/DeleteAdminAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="479" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="updateRole.jsp" partName="updateRole.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/role/updateRole.jsp" title="updateRole.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/role/updateRole.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/role/updateRole.jsp"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="privileges.xml" partName="privileges.xml" path="F:/myeclipse/workspace/NetCtoss/src/privileges.xml" title="privileges.xml" tooltip="NetCtoss/src/privileges.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/privileges.xml"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts-login.xml" partName="struts-login.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts-login.xml" title="struts-login.xml" tooltip="NetCtoss/src/struts-login.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts-login.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LogoutAction.java" partName="LogoutAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/login/LogoutAction.java" title="LogoutAction.java" tooltip="NetCtoss/src/com/netctoss/action/login/LogoutAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/login/LogoutAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="721" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginInterceptor.java" partName="LoginInterceptor.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/interceptor/LoginInterceptor.java" title="LoginInterceptor.java" tooltip="NetCtoss/src/com/netctoss/interceptor/LoginInterceptor.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/interceptor/LoginInterceptor.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="734" selectionTopPixel="33"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ValidateCodeAction.java" partName="ValidateCodeAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/login/ValidateCodeAction.java" title="ValidateCodeAction.java" tooltip="NetCtoss/src/com/netctoss/action/login/ValidateCodeAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/login/ValidateCodeAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="278" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" name="hibernate.cfg.xml" partName="hibernate.cfg.xml" path="F:/myeclipse/workspace/NetCtoss/src/hibernate.cfg.xml" title="hibernate.cfg.xml" tooltip="NetCtoss/src/hibernate.cfg.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/hibernate.cfg.xml"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="login.jsp" partName="login.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/main/login.jsp" title="login.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/main/login.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/main/login.jsp"/>
+</editor>
+<editor id="org.eclipse.wst.dtd.core.dtdsource.source" name="hibernate-configuration-3.0.dtd" partName="hibernate-configuration-3.0.dtd" title="hibernate-configuration-3.0.dtd" tooltip="F:\myeclipse\workspace\NetCtoss\WebRoot\WEB-INF\lib\hibernate3.jar\org\hibernate\hibernate-configuration-3.0.dtd" workbook="DefaultEditorWorkbook">
+<input element="=NetCtoss/F:\/myeclipse\/workspace\/NetCtoss\/WebRoot\/WEB-INF\/lib\/hibernate3.jar&lt;org.hibernate" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" path="hibernate-configuration-3.0.dtd"/>
+<editorState selectionHorizontalPixel="0" selectionLength="161" selectionOffset="51" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.dtd.core.dtdsource.source" name="hibernate-mapping-3.0.dtd" partName="hibernate-mapping-3.0.dtd" title="hibernate-mapping-3.0.dtd" tooltip="F:\myeclipse\workspace\NetCtoss\WebRoot\WEB-INF\lib\hibernate3.jar\org\hibernate\hibernate-mapping-3.0.dtd" workbook="DefaultEditorWorkbook">
+<input element="=NetCtoss/F:\/myeclipse\/workspace\/NetCtoss\/WebRoot\/WEB-INF\/lib\/hibernate3.jar&lt;org.hibernate" factoryID="org.eclipse.jdt.ui.internal.JarEntryEditorInputFactory" path="hibernate-mapping-3.0.dtd"/>
+<editorState selectionHorizontalPixel="0" selectionLength="150" selectionOffset="29" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.hibernate.editor.multipage.hibernatemappingeditor" name="Cost.hbm.xml" partName="Cost.hbm.xml" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Cost.hbm.xml" title="Cost.hbm.xml" tooltip="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Cost.hbm.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Cost.hbm.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Cost.java" partName="Cost.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Cost.java" title="Cost.java" tooltip="NetCtoss/src/com/netctoss/pojo/Cost.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Cost.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="23" selectionOffset="154" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateUtil.java" partName="HibernateUtil.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/util/HibernateUtil.java" title="HibernateUtil.java" tooltip="NetCtoss/src/com/netctoss/util/HibernateUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/util/HibernateUtil.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="862" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateCostDao.java" partName="HibernateCostDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/cost/HibernateCostDao.java" title="HibernateCostDao.java" tooltip="NetCtoss/src/com/netctoss/dao/cost/HibernateCostDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/cost/HibernateCostDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4631" selectionTopPixel="2448"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OpenSessionInViewInterceptor.java" partName="OpenSessionInViewInterceptor.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/interceptor/OpenSessionInViewInterceptor.java" title="OpenSessionInViewInterceptor.java" tooltip="NetCtoss/src/com/netctoss/interceptor/OpenSessionInViewInterceptor.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/interceptor/OpenSessionInViewInterceptor.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="29" selectionOffset="393" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts.xml" partName="struts.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts.xml" title="struts.xml" tooltip="NetCtoss/src/struts.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DeleteCostAction.java" partName="DeleteCostAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/cost/DeleteCostAction.java" title="DeleteCostAction.java" tooltip="NetCtoss/src/com/netctoss/action/cost/DeleteCostAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/cost/DeleteCostAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="414" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts-cost.xml" partName="struts-cost.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts-cost.xml" title="struts-cost.xml" tooltip="NetCtoss/src/struts-cost.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts-cost.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Account.hbm.xml" partName="Account.hbm.xml" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Account.hbm.xml" title="Account.hbm.xml" tooltip="NetCtoss/src/com/netctoss/pojo/Account.hbm.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Account.hbm.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Service.hbm.xml" partName="Service.hbm.xml" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Service.hbm.xml" title="Service.hbm.xml" tooltip="NetCtoss/src/com/netctoss/pojo/Service.hbm.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Service.hbm.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateAccountDao.java" partName="HibernateAccountDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/account/HibernateAccountDao.java" title="HibernateAccountDao.java" tooltip="NetCtoss/src/com/netctoss/dao/account/HibernateAccountDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/account/HibernateAccountDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1989" selectionTopPixel="466"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateServiceDao.java" partName="HibernateServiceDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/service/HibernateServiceDao.java" title="HibernateServiceDao.java" tooltip="NetCtoss/src/com/netctoss/dao/service/HibernateServiceDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/service/HibernateServiceDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3019" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FindAccountAction.java" partName="FindAccountAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/FindAccountAction.java" title="FindAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/FindAccountAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/FindAccountAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="563" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Admin.hbm.xml" partName="Admin.hbm.xml" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Admin.hbm.xml" title="Admin.hbm.xml" tooltip="NetCtoss/src/com/netctoss/pojo/Admin.hbm.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Admin.hbm.xml"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="Role.hbm.xml" partName="Role.hbm.xml" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/pojo/Role.hbm.xml" title="Role.hbm.xml" tooltip="NetCtoss/src/com/netctoss/pojo/Role.hbm.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/pojo/Role.hbm.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateAdminDao.java" partName="HibernateAdminDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/login/HibernateAdminDao.java" title="HibernateAdminDao.java" tooltip="NetCtoss/src/com/netctoss/dao/login/HibernateAdminDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/login/HibernateAdminDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="495" selectionOffset="2150" selectionTopPixel="1199"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HibernateRoleDao.java" partName="HibernateRoleDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/role/HibernateRoleDao.java" title="HibernateRoleDao.java" tooltip="NetCtoss/src/com/netctoss/dao/role/HibernateRoleDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/role/HibernateRoleDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1985" selectionTopPixel="859"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AddAccountAction.java" partName="AddAccountAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/AddAccountAction.java" title="AddAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/AddAccountAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/AddAccountAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="441" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToLoginAction.java" partName="ToLoginAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/login/ToLoginAction.java" title="ToLoginAction.java" tooltip="NetCtoss/src/com/netctoss/action/login/ToLoginAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/login/ToLoginAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="622" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BaseAction.java" partName="BaseAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/BaseAction.java" title="BaseAction.java" tooltip="NetCtoss/src/com/netctoss/action/BaseAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/BaseAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="299" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.springframework.springconfigeditor" name="applicationContext.xml" partName="applicationContext.xml" path="F:/myeclipse/workspace/NetCtoss/src/applicationContext.xml" title="applicationContext.xml" tooltip="NetCtoss/src/applicationContext.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/applicationContext.xml"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="addAccount.jsp" partName="addAccount.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/account/addAccount.jsp" title="addAccount.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/account/addAccount.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/account/addAccount.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToUpdateAccountAction.java" partName="ToUpdateAccountAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/ToUpdateAccountAction.java" title="ToUpdateAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/ToUpdateAccountAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/ToUpdateAccountAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="595" selectionTopPixel="51"/>
+</editor>
+<editor id="com.genuitec.eclipse.struts2.editor" name="struts-service.xml" partName="struts-service.xml" path="F:/myeclipse/workspace/NetCtoss/src/struts-service.xml" title="struts-service.xml" tooltip="NetCtoss/src/struts-service.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/struts-service.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAccountAction.java" partName="UpdateAccountAction.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/UpdateAccountAction.java" title="UpdateAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/UpdateAccountAction.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/UpdateAccountAction.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="394" selectionTopPixel="0"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="updateAccount.jsp" partName="updateAccount.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/account/updateAccount.jsp" title="updateAccount.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/account/updateAccount.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/account/updateAccount.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IAccountDao.java" partName="IAccountDao.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/dao/account/IAccountDao.java" title="IAccountDao.java" tooltip="NetCtoss/src/com/netctoss/dao/account/IAccountDao.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/dao/account/IAccountDao.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1176" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAccountPswValidate.java" partName="UpdateAccountPswValidate.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/UpdateAccountPswValidate.java" title="UpdateAccountPswValidate.java" tooltip="NetCtoss/src/com/netctoss/action/account/UpdateAccountPswValidate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/UpdateAccountPswValidate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="648" selectionTopPixel="102"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="findRole.jsp" partName="findRole.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/role/findRole.jsp" title="findRole.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/role/findRole.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/role/findRole.jsp"/>
+</editor>
+<editor id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="findService.jsp" partName="findService.jsp" path="F:/myeclipse/workspace/NetCtoss/WebRoot/WEB-INF/service/findService.jsp" title="findService.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/service/findService.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/WebRoot/WEB-INF/service/findService.jsp"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAccountRidValidate.java" partName="UpdateAccountRidValidate.java" path="F:/myeclipse/workspace/NetCtoss/src/com/netctoss/action/account/UpdateAccountRidValidate.java" title="UpdateAccountRidValidate.java" tooltip="NetCtoss/src/com/netctoss/action/account/UpdateAccountRidValidate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NetCtoss/src/com/netctoss/action/account/UpdateAccountRidValidate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="674" selectionTopPixel="58"/>
+</editor>
+<editor id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="log4j.properties" partName="log4j.properties" path="F:/myeclipse/workspace/NetCtoss/src/log4j.properties" title="log4j.properties" tooltip="F:/myeclipse/workspace/NetCtoss/src/log4j.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/NetCtoss/src/log4j.properties"/>
+</editor>
+<editor id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="db.properties" partName="db.properties" path="F:/myeclipse/workspace/NetCtoss/src/db.properties" title="db.properties" tooltip="F:/myeclipse/workspace/NetCtoss/src/db.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" path="/NetCtoss/src/db.properties"/>
+</editor>
+</editors>
+<views>
+<view id="com.genuitec.eclipse.sqlexplorer.views.SQLResultsView" partName="SQL Results">
+<viewState/>
+</view>
+<view id="com.genuitec.eclipse.ui.HTMLView" partName="Web Browser">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
+<view id="com.genuitec.eclipse.ast.deploy.core.serverview" partName="Servers">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="1" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.maven.ide.eclipse.MavenModuleFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.genuitec.eclipse.sqlexplorer.views.DatabaseView" partName="DB Browser">
+<viewState/>
+</view>
+<view id="org.eclipse.wst.internet.monitor.view" partName="TCP/IP Monitor">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+</views>
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.genuitec.myeclipse.perspective.myeclipseperspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.genuitec.myeclipse.perspective.MyEclipsePerspectiveFactory" id="com.genuitec.myeclipse.perspective.myeclipseperspective" label="MyEclipse Java Enterprise"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.deploytools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.test.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.desktop"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.screencapture"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.examples.actionSet"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.hibernatetools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.webtools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.j2eedt.core.ejb"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.jsftools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.faceletstools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.maven.pro.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.jpatools"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.portlet.portletactions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.reporting"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.springtools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.strutstools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.restsupport"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.ws.xfire.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.icefaces"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.about.actions"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.product.actions"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.ActionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.aop.ui.matcher.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.ui.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.search.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.uml.actions"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.uml2.ui.actions"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.profileActionSet"/>
+<alwaysOnActionSet id="com.genuitec.eclipse.web20.actionset"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.tapestrytools"/>
+<alwaysOnActionSet id="com.genuitec.myeclipse.actions.webservices"/>
+<alwaysOnActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.ui.navigation"/>
+<alwaysOnActionSet id="org.maven.ide.eclipse.actionSet"/>
+<alwaysOnActionSet id="org.springframework.ide.eclipse.beans.ui.ActionSet"/>
+<show_view_action id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="uky.article.imageviewer.views.ImageView"/>
+<show_view_action id="org.eclipse.wst.common.snippets.internal.ui.SnippetsView"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="com.genuitec.eclipse.ui.HTMLView"/>
+<new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.EJBProjectCreationWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.NewEARProjectWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.j2eedt.ui.wizard.WebProjectCreationWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.ws.xfire.wizards.NewXFireWebProjectWizard1"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="com.aston.wizards.applet.NewAppletCreationWizard"/>
+<new_wizard_action id="com.aston.wizards.html.NewHtmlCreationWizard"/>
+<new_wizard_action id="com.aston.wizards.jsp.NewJspCreationWizard"/>
+<new_wizard_action id="com.aston.wizards.xhtml.NewXhtmlCreationWizard"/>
+<new_wizard_action id="com.aston.wizards.servlet.NewServletCreationWizard"/>
+<new_wizard_action id="org.jboss.ide.eclipse.jdt.j2ee.ui.wizards.ejb.NewSessionEJBWizard"/>
+<new_wizard_action id="org.jboss.ide.eclipse.jdt.j2ee.ui.wizards.ejb.NewEntityEJBWizard"/>
+<new_wizard_action id="org.jboss.ide.eclipse.jdt.j2ee.ui.wizards.ejb.NewMessageDrivenEJBWizard"/>
+<new_wizard_action id="com.aston.wizards.xml.NewXmlCreationWizard"/>
+<new_wizard_action id="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard"/>
+<new_wizard_action id="org.eclipse.wst.xsd.ui.internal.wizards.NewXSDWizard"/>
+<new_wizard_action id="com.genuitec.eclipse.struts.org.easystruts.eclipse.wizards.NewFormCreationWizardX1_1"/>
+<new_wizard_action id="com.genuitec.eclipse.struts.org.easystruts.eclipse.wizards.NewActionCreationWizardX1_1"/>
+<new_wizard_action id="com.genuitec.eclipse.dehory.newformwizard"/>
+<new_wizard_action id="com.genuitec.eclipse.reporting.projectwizard"/>
+<new_wizard_action id="com.genuitec.eclipse.uml.wizard.NewUMLModelFileWizard"/>
+<perspective_action id="com.genuitec.eclipse.dehory.dehoryperspective"/>
+<perspective_action id="com.genuitec.eclipse.hibernate.perspective.HibernatePerspective"/>
+<perspective_action id="com.genuitec.eclipse.imageeditor.perspective"/>
+<perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
+<perspective_action id="com.genuitec.dali.adapter.persistencePerspective"/>
+<perspective_action id="com.genuitec.eclipse.reporting.ReportPerspective"/>
+<perspective_action id="com.genuitec.eclipse.sqlexplorer.perspectives.SQLExplorerPluginPerspective"/>
+<perspective_action id="com.genuitec.eclipse.uml.umlPerspective"/>
+<perspective_action id="com.genuitec.eclipse.web20.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="com.genuitec.eclipse.ui.HTMLView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="com.genuitec.eclipse.ast.deploy.core.serverview"/>
+<view id="com.genuitec.eclipse.sqlexplorer.views.DatabaseView"/>
+<view id="org.eclipse.wst.internet.monitor.view"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@124835" orientation="256" selectedTabId="com.genuitec.eclipse.sqlexplorer.views.SQLResultsView" style="0">
+<fastViews>
+<view id="com.genuitec.eclipse.sqlexplorer.views.SQLResultsView" ratio="0.29685536"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="cvslocation">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.team.ccvs.ui.RepositoriesView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="cvslocation">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.20140515" ratioLeft="172" ratioRight="682" relationship="2" relative="cvslocation"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1a9447c" ratio="0.75" ratioLeft="600" ratioRight="200" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1cf4363" ratio="0.54868627" ratioLeft="355" ratioRight="292" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1a9447c">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="bottom" ratio="0.7106109" ratioLeft="442" ratioRight="180" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1382fba" ratio="0.6931818" ratioLeft="549" ratioRight="243" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="com.genuitec.eclipse.ui.HTMLView" label="Web Browser"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.genuitec.eclipse.ast.deploy.core.serverview" label="Servers"/>
+<page content="com.genuitec.eclipse.sqlexplorer.views.DatabaseView" label="DB Browser"/>
+<page content="org.eclipse.wst.internet.monitor.view" label="TCP/IP Monitor"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@124835" ratio="0.8413793" ratioLeft="366" ratioRight="69" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="com.genuitec.eclipse.sqlexplorer.views.SQLResultsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="topleft" ratio="0.39876354" ratioLeft="258" ratioRight="389" relationship="4" relative="cvslocation">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomleft" ratio="0.54868627" ratioLeft="355" ratioRight="292" relationship="4" relative="topleft">
+<folder appearance="2" expanded="2">
+<page content="uky.article.imageviewer.views.ImageView" label="LabelNotFound"/>
+<page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NetCtoss/src/com/netctoss/dao/account/HibernateAccountDao.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NetCtoss/src/com/netctoss/action/login/ToLoginAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NetCtoss/src/com/netctoss/action/login/LoginAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/NetCtoss/WebRoot/WEB-INF/main/login.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" path="/NetCtoss/src/struts-login.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/NetCtoss/WebRoot/js/jquery.cookies.2.2.0.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/NetCtoss/WebRoot/js/jquery.cookies.2.2.0.min.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/NetCtoss/WebRoot/js/jquery.cookie.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" path="/NetCtoss/WebRoot/WEB-INF/main/login.jsp"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" path="/NetCtoss/src/log4j.properties"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.springframework.springconfigeditor" path="/NetCtoss/src/applicationContext.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NetCtoss/src/com/netctoss/dao/cost/CostDaoImpl.java"/>
+<editor factoryID="org.jboss.tools.common.core.resources.XModelObjectEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" path="/NetCtoss/src/db.properties"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" path="/NetCtoss/src/hibernate.cfg.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.hibernate.editors.HibernateConfigXMLEditor" path="/NetCtoss/src/hibernate.cfg.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NetCtoss/src/com/netctoss/dao/cost/CostDaoImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NetCtoss/src/com/netctoss/action/cost/FindCostAction.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" path="/NetCtoss/src/struts-role.xml"/>
+</editors>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="ToLoginAction.java" index="1">
+<position info="not_deleted" x="921" y="8"/>
+</item>
+<item historyLabel="HibernateAccountDao.java" index="0">
+<position info="not_deleted" x="1989" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="ToLoginAction.java" index="1">
+<position info="not_deleted" x="718" y="0"/>
+</item>
+<item historyLabel="LoginAction.java" index="2">
+<position info="not_deleted" x="2144" y="0"/>
+</item>
+<item historyLabel="struts-login.xml" index="4"/>
+<item historyLabel="ToLoginAction.java" index="1">
+<position info="not_deleted" x="622" y="0"/>
+</item>
+<item historyLabel="HibernateAccountDao.java" index="0">
+<position info="not_deleted" x="1989" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="jquery.cookies.2.2.0.js" index="5">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="jquery.cookies.2.2.0.min.js" index="6">
+<position info="not_deleted" x="199" y="30"/>
+</item>
+<item historyLabel="jquery.cookies.2.2.0.js" index="5">
+<position info="not_deleted" x="465" y="0"/>
+</item>
+<item historyLabel="ToLoginAction.java" index="1">
+<position info="not_deleted" x="622" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="jquery.cookies.2.2.0.js" index="5">
+<position info="not_deleted" x="753" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="jquery.cookie.js" index="7">
+<position info="not_deleted" x="3485" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="3"/>
+<item historyLabel="ToLoginAction.java" index="1">
+<position info="not_deleted" x="622" y="0"/>
+</item>
+<item historyLabel="struts-login.xml" index="4"/>
+<item historyLabel="LoginAction.java" index="2">
+<position info="not_deleted" x="2144" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="8"/>
+<item historyLabel="LoginAction.java" index="2">
+<position info="not_deleted" x="2554" y="16"/>
+</item>
+<item historyLabel="login.jsp" index="8"/>
+<item historyLabel="LoginAction.java" index="2">
+<position info="not_deleted" x="2882" y="0"/>
+</item>
+<item historyLabel="login.jsp" index="8"/>
+<item historyLabel="LoginAction.java" index="2">
+<position info="not_deleted" x="2882" y="0"/>
+</item>
+<item historyLabel="log4j.properties" index="9"/>
+<item historyLabel="LoginAction.java" index="2">
+<position info="not_deleted" x="2528" y="0"/>
+</item>
+<item historyLabel="log4j.properties" index="9"/>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="CostDaoImpl.java" index="11">
+<position info="not_deleted" x="5012" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="db.properties" index="12"/>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="db.properties" index="12"/>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="hibernate.cfg.xml" index="13"/>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="db.properties" index="12"/>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="db.properties" index="12"/>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="hibernate.cfg.xml" index="14"/>
+<item historyLabel="CostDaoImpl.java" index="15">
+<position info="not_deleted" x="5012" y="0"/>
+</item>
+<item historyLabel="applicationContext.xml" index="10"/>
+<item historyLabel="FindCostAction.java" index="16">
+<position info="not_deleted" x="1096" y="0"/>
+</item>
+<item active="true" historyLabel="struts-role.xml" index="17"/>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@124835"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="db.properties" tooltip="NetCtoss/src/db.properties">
+<persistable path="/NetCtoss/src/db.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.jboss.tools.common.propertieseditor.PropertiesCompoundEditor" name="log4j.properties" tooltip="NetCtoss/src/log4j.properties">
+<persistable path="/NetCtoss/src/log4j.properties"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.cookie.js" tooltip="NetCtoss/WebRoot/js/jquery.cookie.js">
+<persistable path="/NetCtoss/WebRoot/js/jquery.cookie.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.cookies.2.2.0.min.js" tooltip="NetCtoss/WebRoot/js/jquery.cookies.2.2.0.min.js">
+<persistable path="/NetCtoss/WebRoot/js/jquery.cookies.2.2.0.min.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.cookies.2.2.0.js" tooltip="NetCtoss/WebRoot/js/jquery.cookies.2.2.0.js">
+<persistable path="/NetCtoss/WebRoot/js/jquery.cookies.2.2.0.js"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAccountRidValidate.java" tooltip="NetCtoss/src/com/netctoss/action/account/UpdateAccountRidValidate.java">
+<persistable path="/NetCtoss/src/com/netctoss/action/account/UpdateAccountRidValidate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="findService.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/service/findService.jsp">
+<persistable path="/NetCtoss/WebRoot/WEB-INF/service/findService.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="findRole.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/role/findRole.jsp">
+<persistable path="/NetCtoss/WebRoot/WEB-INF/role/findRole.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAccountPswValidate.java" tooltip="NetCtoss/src/com/netctoss/action/account/UpdateAccountPswValidate.java">
+<persistable path="/NetCtoss/src/com/netctoss/action/account/UpdateAccountPswValidate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToUpdateServiceAction.java" tooltip="NetCtoss/src/com/netctoss/action/service/ToUpdateServiceAction.java">
+<persistable path="/NetCtoss/src/com/netctoss/action/service/ToUpdateServiceAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IAccountDao.java" tooltip="NetCtoss/src/com/netctoss/dao/account/IAccountDao.java">
+<persistable path="/NetCtoss/src/com/netctoss/dao/account/IAccountDao.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.webdesigner3.editors.jsp" name="updateAccount.jsp" tooltip="NetCtoss/WebRoot/WEB-INF/account/updateAccount.jsp">
+<persistable path="/NetCtoss/WebRoot/WEB-INF/account/updateAccount.jsp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UpdateAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/UpdateAccountAction.java">
+<persistable path="/NetCtoss/src/com/netctoss/action/account/UpdateAccountAction.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.genuitec.eclipse.struts2.editor" name="struts-service.xml" tooltip="NetCtoss/src/struts-service.xml">
+<persistable path="/NetCtoss/src/struts-service.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ToUpdateAccountAction.java" tooltip="NetCtoss/src/com/netctoss/action/account/ToUpdateAccountAction.java">
+<persistable path="/NetCtoss/src/com/netctoss/action/account/ToUpdateAccountAction.java"/>
+</file>
+</mruList>
+</workbench>

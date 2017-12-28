@@ -1,0 +1,16 @@
+package com.netctoss.action.account;
+
+public class UpdateAccountPswValidate {
+	
+	//输入属性;
+	private String oldPassword;
+	
+	//输出属性;
+	private boolean pass;
+	
+	public String execute(){
+		
+		return "success";
+	}
+	
+}

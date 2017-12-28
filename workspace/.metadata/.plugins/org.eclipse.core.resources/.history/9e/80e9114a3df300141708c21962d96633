@@ -1,0 +1,206 @@
+<%@ page pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="/struts-tags" prefix="s" %>
+<%@ page isELIgnored="false" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>达内－NetCTOSS</title>
+        <link type="text/css" rel="stylesheet" media="all" href="../styles/global.css" />
+        <link type="text/css" rel="stylesheet" media="all" href="../styles/global_color.css" /> 
+        <script language="javascript" type="text/javascript" src="../js/jquery-1.4.3.js"></script>
+        <script language="javascript" type="text/javascript" src="../js/jquery.cookie.js"></script>
+    	<script type="text/javascript" language="javascript">
+    	
+    		//判断页面是否存在错误的内容;
+        	var nameFlag1; //用户名验证结果;
+        	var nameFlag2; //密码框验证结果;
+        	var nameFlag3; //验证码框验证结果;
+        	
+    		//更换验证码;
+    		function change(imgObj){
+    			imgObj.src = "validateCode.action?date="+new Date().getTime();
+    		}
+    		
+    		//用户名输入框设置焦点移出事件(检查用户名是否存在);
+            $(function(){
+            	$("#userName").blur(function(){
+            		//取得输入框中的值;
+            		var name = $(this).val();
+            		//若为空,则提示,并给出错误提示的样式;
+            		if(name == null||name==""){
+            			$("#nameMsg").text("用户名不能为空");
+            			return;
+            		}
+            			//发送异步请求给loginValidate.action,返回是否验证通过;
+            			$.post("loginValidate.action",
+            			{"name":name},
+            			function(data){
+            				if(data){
+            					//返回值为true,则校验通过;
+            					$("#nameMsg").text("30长度的字母、数字和下划线");
+            				}else{
+            					//如果返回值为false,则校验不通过;
+            					$("#nameMsg").text("用户名不存在!");
+            				}
+            			});
+            	});
+            });
+    		
+    	    //验证密码是否为空;
+            $(function(){
+            	$("#userPassword").blur(function(){
+            		var password = $(this).val();
+            		if (password == null|| password==""){
+            		    $("#pswMsg").text("密码不能为空");
+            			return;           			
+            		}else{
+            			$("#pswMsg").text("30长度的字母、数字和下划线");
+            			nameFlag2=true;
+            		}
+            	});
+            });
+    		
+    		//检查验证码是否为空;
+            $(function(){
+            	$("#validateCode").blur(function(){
+            		var validateCode = $(this).val();
+            		if (validateCode == null|| validateCode==""){
+            		    $("#validateMsg").text("验证码不能为空");
+            			return;           			
+            		}else{
+            			$("#validateMsg").text("");
+            		}
+            	});
+            });
+            
+            
+    		//验证是否能够提交;
+            function showResult() {
+            //在用户提交时再次检查各个输入框的合法性;原因是,如果用户使用后退来到之前的登陆页面,之前输入的内容会被浏览器保留在输入框中,但是所有
+            //js操作发生的变化将被重置,还有一种情况是用户第一次来到登陆页面,没有把鼠标点入任何输入框而直接点击登陆,那么这两种情况下用户将不能
+            //登陆并且得不到正确的错误信息,所以需要在登陆时再次检查合法性;
+            	var name = $("#userName").val();
+            		//若为空,则提示,并给出错误提示的样式;
+            		if(name == null||name==""){
+            			$("#nameMsg").text("用户名不能为空");
+            			nameFlag1=false;
+            		}else{
+            		
+            		//发送同步请求给loginValidate.action,返回是否验证通过;
+            	 	$.ajax({
+					'url':'loginValidate.action',
+					'type':'post',
+					async:false,
+					data:{"name":name},
+					dataType:'json',
+					success:function(data){
+						if(data){
+            					//返回值为true,则校验通过;
+            					$("#nameMsg").text("30长度的字母、数字和下划线");
+            					nameFlag1=true;         					
+            			}else{
+            					//如果返回值为false,则校验不通过;
+            					$("#nameMsg").text("用户名不存在!");
+            					nameFlag1=false;        					
+            			}
+            		}		
+					});
+					}
+            
+           		 var password = $("#userPassword").val();
+            		if (password == null|| password==""){
+            		    $("#pswMsg").text("密码不能为空");
+            			nameFlag2=false;
+            		}else{
+            			$("#pswMsg").text("30长度的字母、数字和下划线");
+            			nameFlag2=true;
+            		}
+            		
+         	  	var validateCode = $("#validateCode").val();
+            		if (validateCode == null|| validateCode==""){
+            		    $("#validateMsg").text("验证码不能为空");
+            			nameFlag=false;
+            		}else{
+            			$("#validateMsg").text("");
+            			nameFlag3=true;
+            		}
+            
+            	if(!(nameFlag1&&nameFlag2&&nameFlag3)){
+            		return;
+           		}
+           		//验证是否记住密码(JS实现记住密码);
+           		//saveUserInfo();
+           		//提交;
+            	document.getElementById("loginForm").submit();
+            }
+            
+            /*
+            //通过JS实现记住密码;
+            //初始化页面时验证是否记住了密码 
+			$(document).ready(function() { 
+				if ($.cookie("remembered") == "true") { 
+					$("#rmbUser").attr("checked", true); 
+					$("#userName").val($.cookie("adminCode")); 
+					$("#userPassword").val($.cookie("password")); 
+				} 
+			}); 
+			
+			//保存用户信息(JS实现记住密码);
+			function saveUserInfo() { 
+           		if ($("#rmbUser").attr("checked")){ 
+					var userName = $("#userName").val(); 
+					var passWord = $("#userPassword").val(); 
+					$.cookie('remembered','true',{expires:7,path:'/NetCtoss/login/'}); // 存储一个带7天期限的 cookie 
+					$.cookie("adminCode",userName,{expires:7,path:'/NetCtoss/login/'}); // 存储一个带7天期限的 cookie 
+					$.cookie("password",passWord,{expires:7,path:'/NetCtoss/login/'}); // 存储一个带7天期限的 cookie 
+				} 
+				else { 
+					$.cookie("remembered",null); 
+					$.cookie("adminCode",null); 
+					$.cookie("password",null); 
+				} 
+			} 
+			*/
+            
+    	</script>
+    </head>
+    <body class="index">
+        <div class="login_box">
+        	<form action="login.action" method="post" id="loginForm">
+	            <table>
+	                <tr>
+	                    <td class="login_info">账号：</td>
+	                    <!--注意:这里账号输入框的标签中value用el表达式是为了用户在成功登录过之后,再次访问登录页面时,保留session中取得的账号名;
+	                                                     而就算用户第一次登录并且账号密码发生错误返回到此登录页面时也能从request中获得之前输入的账号名,可以不用重新输入;-->
+	                    <td colspan="2"><input name="admin.adminCode" value="${admin.adminCode}" type="text" id="userName" class="width150" /></td>
+	                    <td class="login_error_info"><span id="nameMsg" class="required">30长度的字母、数字和下划线</span></td>
+	                </tr>
+	                <tr>
+	                    <td class="login_info">保存
+	                    <s:checkbox id="rmbUser" name="remember" theme="simple"></s:checkbox>
+	                                                      密码：</td>
+	                    <!--注意:这里密码输入框的标签中value用struts2标签和ognl表达式是为了用户在成功登录过之后,再次访问登录页面时,密码输入框被重置;
+	                                                     而如果用户第一次登录并且账号密码发生错误返回到此登录页面时也能从request中获得之前输入的密码,可以不用重新输入;-->
+	                    <td colspan="2"><input name="admin.password" value="<s:property value="admin.password"/>" type="password" id="userPassword" class="width150" /></td>
+	                    <td><span id="pswMsg" class="required">30长度的字母、数字和下划线</span></td>
+	                </tr>
+	                <tr>
+	                    <td class="login_info">验证码：</td>
+	                    <td class="width70"><input name="validateCode" type="text" id="validateCode" class="width70" /></td>
+	                    <td><img src="validateCode.action" alt="验证码" title="点击更换" onclick="change(this);"/></td>  
+	                    <td><span id="validateMsg" class="required">${validateErrorMsg}</span></td>
+	                </tr>            
+	                <tr>
+	                    <td></td>
+	                    <td class="login_button" colspan="2">
+	                        <a href="javascript:showResult();"><img src="../images/login_btn.png" /></a>
+	                    </td>    
+	                    <td><span class="required">${errorMsg}</span></td>                
+	                </tr>
+	            </table>
+            </form>
+        </div>
+    </body>
+</html>

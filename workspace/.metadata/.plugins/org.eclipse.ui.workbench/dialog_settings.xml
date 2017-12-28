@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="960" key="dialogWidth"/>
+		<item value="530" key="dialogHeight"/>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="textEntries">
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="-424" key="DIALOG_Y_ORIGIN"/>
+		<item value="-306" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="FileExtensionDialogSettings">
+		<item value="527" key="DIALOG_WIDTH"/>
+		<item value="81" key="DIALOG_Y_ORIGIN"/>
+		<item value="319" key="DIALOG_HEIGHT"/>
+		<item value="76" key="DIALOG_X_ORIGIN"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ShowViewDialog">
+		<item value="345" key="DIALOG_WIDTH"/>
+		<item value="org.eclipse.wst.internet.monitor.view" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="84" key="DIALOG_Y_ORIGIN"/>
+		<item value="340" key="DIALOG_X_ORIGIN"/>
+		<item value="451" key="DIALOG_HEIGHT"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.genuitec.eclipse.views.myEclipseCategory"/>
+			<item value="com.genuitec.eclipse.views.myEclipseDBCategory"/>
+		</list>
+	</section>
+	<section name="FileSystemExportWizard">
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="D:\我的文档\桌面"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.FileSystem" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+</section>

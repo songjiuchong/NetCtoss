@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+
+<!-- name指定实体类,table指定数据表名 -->
+    <class name="com.netctoss.pojo.Cost" table="COST">
+    
+    	<!-- 主键字段映射描述 -->
+    	<!-- name指定属性名,type指定类型 -->
+        <id name="id" type="integer">
+        	<!-- name指定字段名 -->
+        	<column name="ID"/>
+        	<!-- 指定添加操作主键值如何生成 -->
+        	<generator class="native">
+        		<!-- 指定序列名为cost_seq -->
+        		<param name="sequence">cost_seq</param>
+        	</generator>
+        </id>
+        <!-- 非主键字段映射描述 -->
+        <property name="name" type="string">
+        	<column name="NAME"/>
+        </property>
+        <property name="baseDuration" type="integer">
+        	<column name="BASE_DURATION"/>
+        </property>
+        <property name="baseCost" type="double">
+        	<column name="BASE_COST"/>
+        </property>
+        <property name="unitCost" type="double">
+        	<column name="UNIT_COST"/>
+        </property>       
+        <property name="status" type="string">
+        	<column name="STATUS"/>
+        </property>         
+        <property name="descr" type="string">
+        	<column name="DESCR"/>
+        </property>         
+        <property name="createTime" type="date">
+        	<column name="CREATIME"/>
+        </property>         
+        <property name="startTime" type="date">
+        	<column name="STARTIME"/>
+        </property>   
+        <property name="costType" type="string">
+        	<column name="COST_TYPE"/>
+        </property>
+        
+        <!-- 描述services属性,采用一对多关系加载Service对象数据 -->
+        <set name="services" inverse="true" cascade="all">
+        	<!-- 指定关联条件的外键字段,默认与当前Account的主键关联 -->
+        	<key column="COST_ID"></key>
+        	<!-- 指定了关联的类class路径 -->
+        	<one-to-many class="com.netctoss.pojo.Service"/>
+        </set>
+                      
+    </class>
+    
+    <!-- 定义hql查询 --> 
+    <!-- 
+    <query name="find1">
+    	设置一个文本区,其中如果出现一些类似'>','<'等敏感字符,不会去解析
+    	<![CDATA[
+    	select new Cost(c.id,c.name) 
+    	from Cost c where c.costType=?
+    	]]>
+    </query> 
+     -->
+
+</hibernate-mapping>
+
+

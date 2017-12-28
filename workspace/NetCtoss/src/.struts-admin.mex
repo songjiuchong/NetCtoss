@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="admin" location="0,0" size="0,0">
+    <action name="findAdmin" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="findAdmin.jsp" />
+      </result>
+    </action>
+    <action name="resetPassword" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="toAddAdmin" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="addAdmin.jsp" />
+      </result>
+    </action>
+    <action name="addAdmin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+    <action name="updateAdmin" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="findAdmin.jsp" path="/WEB-INF/admin/findAdmin.jsp" location="0,0" size="0,0" />
+  <webResource name="addAdmin.jsp" path="/WEB-INF/admin/addAdmin.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+
